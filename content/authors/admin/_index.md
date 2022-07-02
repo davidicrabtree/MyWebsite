@@ -1,6 +1,5 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: ''
 education:
   courses:
   - course: MA in Social Sciences, Politics concentration
@@ -44,5 +43,4 @@ Before discovering finding my place in comparative politics, I co-authored manus
 In my free time, I tutor research methodology and statistics for students of political science, psychology, sociology, and other social science disciplines. My tutoring background spans the course of two years, and to this day I enjoy sharing my passion for data science with other driven academics.   
 
 
-
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "authors/admin/CrabtreeCV.pdf" "newtab" >}}CV{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "/authors/admin/CrabtreeCV.pdf" "newtab" >}}CV{{< /staticref >}}.
