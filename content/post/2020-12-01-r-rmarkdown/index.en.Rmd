@@ -1,14 +1,19 @@
 ---
 title: "Arrival: A Case for Constructivism"
-author: "David I. Crabtree"
+authors:
+  - admin
 date: 2022-02-20T21:13:14-05:00
 categories: ["SciFi"]
 tags: ["SciFi", "International Relations Theory", "Constructivism"]
+image:
+  focal_point: ""
+  placement: 2
+  preview_only: false
+subtitle: "If aliens landed on Earth tomorrow, what would humanity do? According to _Arrival_, we would nearly destroy ourselves."
+summary: "If aliens landed on Earth tomorrow, what would humanity do? According to _Arrival_, we would nearly destroy ourselves."
 ---
 
 ![](images/Alien-Arrival-Amy-Adams.webp){width=100%}
-
-If aliens landed on Earth tomorrow, what would humanity do? According to _Arrival_, we would nearly destroy ourselves.
 
 Released to critical acclaim in 2016, _Arrival_ is a science fiction film that highlights the perspective of linguistics professor Dr. Louise Banks (Amy Adams), who has the unenviable duty of communicating with foreign visitors to Earth and simultaneously preventing war between its suspicious nation-states. In this quest, she works alongside theoretical physicist and future husband Ian Donnelly (Jeremy Renner) after they are recruited by Colonel Weber (Forest Whitaker) of the U.S. military.
 
