@@ -4,7 +4,7 @@ categories: ["IR Lectures"]
 date: '2022-07-04T00:00:00Z'
 slides:
   highlight_style: dracula
-  theme: black
+  theme: beige
 summary: An introduction to using Wowchemy's Slides feature.
 tags: ["IR Theory"]
 authors: ["admin"]
