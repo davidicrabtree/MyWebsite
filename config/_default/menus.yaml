@@ -8,10 +8,10 @@ main:
     url: '#about'
     weight: 10
   - name: Blog
-    url: '#posts'
+    url: 'blog'
     weight: 20
   - name: Tutoring Lessons
-    url: '#projects'
+    url: 'tutoring'
     weight: 30
   # - name: Talks
   #   url: '#talks'
