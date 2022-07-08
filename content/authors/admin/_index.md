@@ -21,7 +21,7 @@ interests:
 organizations:
 - name: University of Chicago
   url: https://www.uchicago.edu/
-role: Student at University of Chicago
+role: Graduate Political Science Student
 social:
 - icon: envelope
   icon_pack: fas

@@ -9,11 +9,11 @@ authors: [admin]
 
 # Abstract and optional shortened version.
 abstract: ""
-summary: "How do countries compare on democracy ratings? I use FreedomHouse data to find out."
+summary: "How do democracy ratings vary around the world? I use FreedomHouse data to find out."
 
 # Tags (optional).
 #   Set `tags: []` for no tags, or use the form `tags: ["A Tag", "Another Tag"]` for one or more tags.
-tags: []
+tags: ["R Projects"]
 
 # Links (optional).
 url_pdf: ""
@@ -27,19 +27,49 @@ url_code: ""
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(here)
+library(kableExtra)
 
 
 fh_wb <- read_csv(here("content", "research", "democracy-reports", "files", "fh_wb.csv"))
 
 all_countries <- unique(fh_wb$country)
 
+allfiles <- list.files("files")
+goodfiles <- grep(list.files("files"), pattern = "_files|.csv", invert = TRUE)
+
+
+dt_url <- vector(mode = "character", length = length(goodfiles))
+count = 1
+for (i in goodfiles) {
+  dt_url[count] <- allfiles[i]
+  count = count+1
+}
+
+dt_url <- paste("files/", dt_url, sep = "")
+
+all_countries <- all_countries %>%
+                    sort()
+
 ```
 
 ## Democracy in the World
-How does the health of democracy vary from country to country, continent to continent? 
+How does the health of democracy vary from country to country within a given continent? Using [FreedomHouse](https://freedomhouse.org/report/freedom-world) data from 1973-2019, I generated country profiles for all instances where data was available. The profiles also incorporate economic indicators from the [World Bank](https://data.worldbank.org/indicator).  
 
-`r for (country in all_countries) { cat(country, "\n") }`
+I am currently working to expand this analysis to include measurements of inequality, and to explore the relationship between income and democracy on a global scale.  
+
+These profiles are fully reproducible. [Contact me](https://davidicrabtree.com#contact) for the R scripts.  
 
 
-[United States](files/United States.html)
+```{r, echo=FALSE}
+
+
+all_countries %>% 
+  cell_spec(row.names(.), "html", link = dt_url) %>%
+  kable("html", escape = FALSE, col.names =  "Country Profile") %>%
+  kable_styling(bootstrap_options = c("hover", "striped", "condensed")) %>%
+  scroll_box(width = "100%", height = "800px")
+
+```
+
+
 

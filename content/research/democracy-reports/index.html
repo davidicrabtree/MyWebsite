@@ -9,11 +9,11 @@ authors: [admin]
 
 # Abstract and optional shortened version.
 abstract: ""
-summary: "How do countries compare on democracy ratings? I use FreedomHouse data to find out."
+summary: "How do democracy ratings vary around the world? I use FreedomHouse data to find out."
 
 # Tags (optional).
 #   Set `tags: []` for no tags, or use the form `tags: ["A Tag", "Another Tag"]` for one or more tags.
-tags: []
+tags: ["R Projects"]
 
 # Links (optional).
 url_pdf: ""
@@ -23,10 +23,1051 @@ url_code: ""
 
 ---
 
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
 
 
 <div id="democracy-in-the-world" class="section level2">
 <h2>Democracy in the World</h2>
-<p>How does the health of democracy vary from country to country, continent to continent?</p>
-<p><a href="files/United%20States.html">United States</a></p>
+<p>How does the health of democracy vary from country to country within a given continent? Using <a href="https://freedomhouse.org/report/freedom-world">FreedomHouse</a> data from 1973-2019, I generated country profiles for all instances where data was available. The profiles also incorporate economic indicators from the <a href="https://data.worldbank.org/indicator">World Bank</a>.</p>
+<p>I am currently working to expand this analysis to include measurements of inequality, and to explore the relationship between income and democracy on a global scale.</p>
+<p>These profiles are fully reproducible. <a href="https://davidicrabtree.com#contact">Contact me</a> for the R scripts.</p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:800px; overflow-x: scroll; width:100%; ">
+<table class="table table-hover table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
+Country Profile
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="files/Afghanistan.html" style=" NA    ">Afghanistan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Albania.html" style=" NA    ">Albania</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Algeria.html" style=" NA    ">Algeria</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Andorra.html" style=" NA    ">Andorra</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Angola.html" style=" NA    ">Angola</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Antigua%20and%20Barbuda.html" style=" NA    ">Antigua and Barbuda</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Argentina.html" style=" NA    ">Argentina</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Armenia.html" style=" NA    ">Armenia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Australia.html" style=" NA    ">Australia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Austria.html" style=" NA    ">Austria</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Azerbaijan.html" style=" NA    ">Azerbaijan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Bahamas.html" style=" NA    ">Bahamas</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Bahrain.html" style=" NA    ">Bahrain</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Bangladesh.html" style=" NA    ">Bangladesh</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Barbados.html" style=" NA    ">Barbados</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Belarus.html" style=" NA    ">Belarus</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Belgium.html" style=" NA    ">Belgium</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Belize.html" style=" NA    ">Belize</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Benin.html" style=" NA    ">Benin</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Bhutan.html" style=" NA    ">Bhutan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Bolivia.html" style=" NA    ">Bolivia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Bosnia%20and%20Herzegovina.html" style=" NA    ">Bosnia and Herzegovina</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Botswana.html" style=" NA    ">Botswana</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Brazil.html" style=" NA    ">Brazil</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Brunei.html" style=" NA    ">Brunei</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Bulgaria.html" style=" NA    ">Bulgaria</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Burkina%20Faso.html" style=" NA    ">Burkina Faso</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Burundi.html" style=" NA    ">Burundi</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Cabo%20Verde.html" style=" NA    ">Cabo Verde</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Cambodia.html" style=" NA    ">Cambodia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Cameroon.html" style=" NA    ">Cameroon</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Canada.html" style=" NA    ">Canada</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Central%20African%20Republic.html" style=" NA    ">Central African Republic</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Chad.html" style=" NA    ">Chad</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Chile.html" style=" NA    ">Chile</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/China.html" style=" NA    ">China</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Colombia.html" style=" NA    ">Colombia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Comoros.html" style=" NA    ">Comoros</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Congo%20(Brazzaville).html" style=" NA    ">Congo (Brazzaville)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Congo%20(Kinshasa).html" style=" NA    ">Congo (Kinshasa)</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Costa%20Rica.html" style=" NA    ">Costa Rica</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Cote%20d'Ivoire.html" style=" NA    ">Cote d’Ivoire</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Croatia.html" style=" NA    ">Croatia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Cuba.html" style=" NA    ">Cuba</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Cyprus.html" style=" NA    ">Cyprus</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Czech%20Republic.html" style=" NA    ">Czech Republic</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Czechoslovakia.html" style=" NA    ">Czechoslovakia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Denmark.html" style=" NA    ">Denmark</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Djibouti.html" style=" NA    ">Djibouti</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Dominica.html" style=" NA    ">Dominica</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Dominican%20Republic.html" style=" NA    ">Dominican Republic</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Ecuador.html" style=" NA    ">Ecuador</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Egypt.html" style=" NA    ">Egypt</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/El%20Salvador.html" style=" NA    ">El Salvador</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Equatorial%20Guinea.html" style=" NA    ">Equatorial Guinea</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Eritrea.html" style=" NA    ">Eritrea</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Estonia.html" style=" NA    ">Estonia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Eswatini.html" style=" NA    ">Eswatini</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Ethiopia.html" style=" NA    ">Ethiopia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Fiji.html" style=" NA    ">Fiji</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Finland.html" style=" NA    ">Finland</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/France.html" style=" NA    ">France</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Gabon.html" style=" NA    ">Gabon</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Georgia.html" style=" NA    ">Georgia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Germany,%20E..html" style=" NA    ">Germany</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Germany,%20W..html" style=" NA    ">Germany, E.</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Germany.html" style=" NA    ">Germany, W.</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Ghana.html" style=" NA    ">Ghana</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Greece.html" style=" NA    ">Greece</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Grenada.html" style=" NA    ">Grenada</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Guatemala.html" style=" NA    ">Guatemala</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Guinea-Bissau.html" style=" NA    ">Guinea</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Guinea.html" style=" NA    ">Guinea-Bissau</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Guyana.html" style=" NA    ">Guyana</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Haiti.html" style=" NA    ">Haiti</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Honduras.html" style=" NA    ">Honduras</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Hungary.html" style=" NA    ">Hungary</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Iceland.html" style=" NA    ">Iceland</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/India.html" style=" NA    ">India</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Indonesia.html" style=" NA    ">Indonesia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Iran.html" style=" NA    ">Iran</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Iraq.html" style=" NA    ">Iraq</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Ireland.html" style=" NA    ">Ireland</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Israel.html" style=" NA    ">Israel</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Italy.html" style=" NA    ">Italy</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Jamaica.html" style=" NA    ">Jamaica</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Japan.html" style=" NA    ">Japan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Jordan.html" style=" NA    ">Jordan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Kazakhstan.html" style=" NA    ">Kazakhstan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Kenya.html" style=" NA    ">Kenya</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Kiribati.html" style=" NA    ">Kiribati</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Kosovo.html" style=" NA    ">Kosovo</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Kuwait.html" style=" NA    ">Kuwait</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Kyrgyzstan.html" style=" NA    ">Kyrgyzstan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Laos.html" style=" NA    ">Laos</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Latvia.html" style=" NA    ">Latvia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Lebanon.html" style=" NA    ">Lebanon</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Lesotho.html" style=" NA    ">Lesotho</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Liberia.html" style=" NA    ">Liberia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Libya.html" style=" NA    ">Libya</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Liechtenstein.html" style=" NA    ">Liechtenstein</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Lithuania.html" style=" NA    ">Lithuania</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Luxembourg.html" style=" NA    ">Luxembourg</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Madagascar.html" style=" NA    ">Madagascar</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Malawi.html" style=" NA    ">Malawi</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Malaysia.html" style=" NA    ">Malaysia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Maldives.html" style=" NA    ">Maldives</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Mali.html" style=" NA    ">Mali</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Malta.html" style=" NA    ">Malta</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Marshall%20Islands.html" style=" NA    ">Marshall Islands</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Mauritania.html" style=" NA    ">Mauritania</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Mauritius.html" style=" NA    ">Mauritius</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Mexico.html" style=" NA    ">Mexico</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Micronesia.html" style=" NA    ">Micronesia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Moldova.html" style=" NA    ">Moldova</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Monaco.html" style=" NA    ">Monaco</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Mongolia.html" style=" NA    ">Mongolia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Montenegro.html" style=" NA    ">Montenegro</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Morocco.html" style=" NA    ">Morocco</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Mozambique.html" style=" NA    ">Mozambique</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Myanmar.html" style=" NA    ">Myanmar</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Namibia.html" style=" NA    ">Namibia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Nauru.html" style=" NA    ">Nauru</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Nepal.html" style=" NA    ">Nepal</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Netherlands.html" style=" NA    ">Netherlands</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/New%20Zealand.html" style=" NA    ">New Zealand</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Nicaragua.html" style=" NA    ">Nicaragua</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Niger.html" style=" NA    ">Niger</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Nigeria.html" style=" NA    ">Nigeria</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/North%20Korea.html" style=" NA    ">North Korea</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/North%20Macedonia.html" style=" NA    ">North Macedonia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Norway.html" style=" NA    ">Norway</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Oman.html" style=" NA    ">Oman</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Pakistan.html" style=" NA    ">Pakistan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Palau.html" style=" NA    ">Palau</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Panama.html" style=" NA    ">Panama</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Papua%20New%20Guinea.html" style=" NA    ">Papua New Guinea</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Paraguay.html" style=" NA    ">Paraguay</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Peru.html" style=" NA    ">Peru</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Philippines.html" style=" NA    ">Philippines</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Poland.html" style=" NA    ">Poland</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Portugal.html" style=" NA    ">Portugal</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Qatar.html" style=" NA    ">Qatar</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Romania.html" style=" NA    ">Romania</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Russia.html" style=" NA    ">Russia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Rwanda.html" style=" NA    ">Rwanda</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Samoa.html" style=" NA    ">Samoa</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/San%20Marino.html" style=" NA    ">San Marino</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Sao%20Tome%20and%20Principe.html" style=" NA    ">Sao Tome and Principe</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Saudi%20Arabia.html" style=" NA    ">Saudi Arabia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Senegal.html" style=" NA    ">Senegal</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Serbia%20and%20Montenegro.html" style=" NA    ">Serbia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Serbia.html" style=" NA    ">Serbia and Montenegro</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Seychelles.html" style=" NA    ">Seychelles</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Sierra%20Leone.html" style=" NA    ">Sierra Leone</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Singapore.html" style=" NA    ">Singapore</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Slovakia.html" style=" NA    ">Slovakia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Slovenia.html" style=" NA    ">Slovenia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Solomon%20Islands.html" style=" NA    ">Solomon Islands</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Somalia.html" style=" NA    ">Somalia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/South%20Africa.html" style=" NA    ">South Africa</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/South%20Korea.html" style=" NA    ">South Korea</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/South%20Sudan.html" style=" NA    ">South Sudan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Spain.html" style=" NA    ">Spain</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Sri%20Lanka.html" style=" NA    ">Sri Lanka</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/St.%20Kitts%20and%20Nevis.html" style=" NA    ">St. Kitts and Nevis</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/St.%20Lucia.html" style=" NA    ">St. Lucia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/St.%20Vincent%20and%20the%20Grenadines.html" style=" NA    ">St. Vincent and the Grenadines</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Sudan.html" style=" NA    ">Sudan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Suriname.html" style=" NA    ">Suriname</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Sweden.html" style=" NA    ">Sweden</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Switzerland.html" style=" NA    ">Switzerland</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Syria.html" style=" NA    ">Syria</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Taiwan.html" style=" NA    ">Taiwan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Tajikistan.html" style=" NA    ">Tajikistan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Tanzania.html" style=" NA    ">Tanzania</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Thailand.html" style=" NA    ">Thailand</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/The%20Gambia.html" style=" NA    ">The Gambia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Timor-Leste.html" style=" NA    ">Timor-Leste</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Togo.html" style=" NA    ">Togo</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Tonga.html" style=" NA    ">Tonga</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Trinidad%20and%20Tobago.html" style=" NA    ">Trinidad and Tobago</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Tunisia.html" style=" NA    ">Tunisia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Turkey.html" style=" NA    ">Turkey</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Turkmenistan.html" style=" NA    ">Turkmenistan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Tuvalu.html" style=" NA    ">Tuvalu</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Uganda.html" style=" NA    ">Uganda</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Ukraine.html" style=" NA    ">Ukraine</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/United%20Arab%20Emirates.html" style=" NA    ">United Arab Emirates</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/United%20Kingdom.html" style=" NA    ">United Kingdom</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/United%20States.html" style=" NA    ">United States</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Uruguay.html" style=" NA    ">Uruguay</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/USSR.html" style=" NA    ">USSR</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Uzbekistan.html" style=" NA    ">Uzbekistan</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Vanuatu.html" style=" NA    ">Vanuatu</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Venezuela.html" style=" NA    ">Venezuela</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Vietnam,%20N..html" style=" NA    ">Vietnam</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Vietnam,%20S..html" style=" NA    ">Vietnam, N.</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Vietnam.html" style=" NA    ">Vietnam, S.</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Yemen,%20N..html" style=" NA    ">Yemen</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Yemen,%20S..html" style=" NA    ">Yemen, N.</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Yemen.html" style=" NA    ">Yemen, S.</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Yugoslavia.html" style=" NA    ">Yugoslavia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Zambia.html" style=" NA    ">Zambia</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/Zimbabwe.html" style=" NA    ">Zimbabwe</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
