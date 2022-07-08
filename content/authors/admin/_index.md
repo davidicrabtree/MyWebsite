@@ -2,13 +2,13 @@
 bio: ''
 education:
   courses:
-  - course: MA in Social Sciences, Politics concentration
+  - course: MA, Social Sciences, Politics Concentration
     institution: University of Chicago
-    year: Expected 2023
-  - course: BA in Political Science
+    year: 2023
+  - course: BA, Political Science
     institution: East Tennessee State University
     year: 2022
-  - course: BA in International Affairs
+  - course: BA, International Affairs
     institution: East Tennessee State University
     year: 2022
 email: "crabtreed@uchicago.edu"
