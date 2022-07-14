@@ -34,8 +34,8 @@ fh_wb <- read_csv(here("content", "research", "democracy-reports", "files", "fh_
 
 all_countries <- unique(fh_wb$country)
 
-allfiles <- list.files("files")
-goodfiles <- grep(list.files("files"), pattern = "_files|.csv", invert = TRUE)
+allfiles <- list.files("files/reports")
+goodfiles <- grep(list.files("files/reports"), pattern = "_files|.csv|.md", invert = TRUE)
 
 
 dt_url <- vector(mode = "character", length = length(goodfiles))
@@ -45,7 +45,7 @@ for (i in goodfiles) {
   count = count+1
 }
 
-dt_url <- paste("files/", dt_url, sep = "")
+dt_url <- paste("files/reports/", dt_url, sep = "")
 
 all_countries <- all_countries %>%
                     sort()
