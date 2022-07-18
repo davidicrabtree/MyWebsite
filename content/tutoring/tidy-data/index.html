@@ -1,0 +1,63 @@
+---
+title: "Tidy Data"
+author: "David I. Crabtree"
+date: "7/18/2022"
+output: html_document
+external_link: ""
+image:
+  caption: 
+  focal_point: Smart
+links:
+- icon: fa-solid fa-graduation-cap
+  icon_pack: fas
+  name: Tutoring
+  url: https://www.wyzant.com/Tutors/davidic
+slides: 
+summary: What is tidy data? In this presentation I show how to define tidy data and clean messy datasets.
+tags:
+url_code: ""
+url_pdf: ""
+url_slides: "slides/tidying-data/"
+url_video: ""
+---
+
+
+
+<p>Consider two tables below. Which would be easier to work with?</p>
+<div id="table-1" class="section level3">
+<h3>Table 1</h3>
+<pre><code>## # A tibble: 10 x 5
+##    country      year    pr    cl status     
+##    &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;chr&gt;      
+##  1 Afghanistan  1973     4     3 Partly Free
+##  2 Afghanistan  1974     1     2 Not Free   
+##  3 Afghanistan  1975     1     2 Not Free   
+##  4 Afghanistan  1976     1     2 Not Free   
+##  5 Afghanistan  1977     1     2 Not Free   
+##  6 Afghanistan  1978     2     2 Not Free   
+##  7 Afghanistan  1979     1     1 Not Free   
+##  8 Afghanistan  1980     1     1 Not Free   
+##  9 Afghanistan  1981     1     1 Not Free   
+## 10 Afghanistan  1982     1     1 Not Free</code></pre>
+</div>
+<div id="table-2" class="section level3">
+<h3>Table 2</h3>
+<pre><code>## # A tibble: 10 x 6
+##    `Year(s) Under Review` `1972` ...3  ...4   `1973` ...6 
+##    &lt;chr&gt;                  &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;  &lt;chr&gt;
+##  1 &lt;NA&gt;                   PR     CL    Status PR     CL   
+##  2 Afghanistan            4      5     PF     7      6    
+##  3 Albania                7      7     NF     7      7    
+##  4 Algeria                6      6     NF     6      6    
+##  5 Andorra                4      3     PF     4      4    
+##  6 Angola                 &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;   &lt;NA&gt; 
+##  7 Antigua and Barbuda    &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;   &lt;NA&gt; 
+##  8 Argentina              6      3     PF     2      2    
+##  9 Armenia                &lt;NA&gt;   &lt;NA&gt;  &lt;NA&gt;   &lt;NA&gt;   &lt;NA&gt; 
+## 10 Australia              1      1     F      1      1</code></pre>
+<p>Hopefully it’s clear that Table 1 is easier to work with. But why exactly is this? And how can messy Table 2 be made to look like clean Table 1? In this presentation I take a look at techniques for tidying data.</p>
+<p>Recommended Readings:</p>
+<ul>
+<li>Chapter 12 in <a href="https://r4ds.had.co.nz/tidy-data.html">R for Data Science</a>, by Hadley Wickham and Garrett Grolemund</li>
+</ul>
+</div>

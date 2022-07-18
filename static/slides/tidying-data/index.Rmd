@@ -1,0 +1,447 @@
+---
+title: "Tidy Data"
+subtitle: "What It Is and How To Do It"  
+author: 
+  - "David I. Crabtree"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+knitr::opts_chunk$set(
+  cache = TRUE,
+  echo = TRUE,
+  message = FALSE,
+  warning = FALSE,
+  fig.width = 8, fig.asp = 0.618, fig.retina = 2, dpi = 150,
+  fig.showtext = TRUE,
+  fig.align = "center",
+  out.width = "80%"
+  
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#E22C6C",
+  secondary_color = "#3E33CC",
+  inverse_header_color = "#FFFFFF"
+)
+```
+
+## What is Tidy Data?
+
+#### Consider these two dataframes. Which one looks easier to work with? 
+
+--
+
+.pull-left[
+##### Frame 1
+```{r, echo=FALSE}
+library(here)
+library(tidyverse)
+tidydata <- read_csv(here("static", "slides", "tidying-data", "fh_wb.csv"))
+
+head(select(tidydata, 1, 4, 5))
+
+
+```
+]
+
+--
+
+.pull-right[
+##### Frame 2
+```{r, echo=FALSE}
+library(here)
+library(readxl)
+untidydata <- read_excel(here("static", "slides", "tidying-data", "FreedomHouse.xlsx"), 
+                 sheet = 2, # read in data from the second sheet
+                 na = "-", # recode "-" to missing
+                 skip = 1) 
+
+head(select(untidydata, 1, 2, 5))
+```
+]
+
+--
+
+<br> 
+
+They might seem similar at first glance, but the frame on the left will be significantly easier to work with. In the following slides I'll explain why. 
+
+---
+
+.pull-left[
+## What is Tidy Data?
+
+##### There are three rules that all Tidy Data must follow:
+
+1. **Each variable gets its own column.**  
+1. **Each observation gets its own row.**  
+1. **Each value gets its own cell.** 
+
+Every tidy dataset will follow these rules.  
+]
+
+--
+
+.pull-right[
+
+### Consider an example
+
+```{r}
+head(starwars[1:4])
+```
+]
+
+
+
+---
+
+## What is Tidy Data: Which of these tables is tidy? 
+
+.pull-left[
+
+```{r}
+table1[1:4,]
+table2[1:4,]
+```
+
+]  
+
+.pull-right[
+```{r}
+table3[1:4,]
+```
+
+#### Example continues on next slide
+
+]
+
+---
+
+## What is Tidy Data: Which of these datasets is tidy? 
+
+
+
+.pull-left[
+```{r}
+table4a[1:3,] # cases
+```
+]
+
+.pull-right[
+```{r}
+table4b[1:3,]  # population
+```
+]
+
+---
+
+## What is Tidy Data?
+
+#### Table 1 is the only table that is tidy.
+
+--
+
+```{r}
+table1[1:4,]
+```
+
+--
+
+### Note why this data is tidy
+(1) Every variable has its own column.  
+(2) Every observation has its own row.  
+(3) Every value has its own cell.  
+
+---
+
+class: inverse, middle, center
+
+# Tidying Data: How to Do It 
+
+---
+
+## Tidying Data
+
+#### So what do we do if data has broken one (or more!) of the rules of tidy data? 
+
+--
+
+#### Well, we bring it back into compliance!
+
+--
+
+In order to tidy - or wrangle - the data, we will use the following functions from the `dplyr` package. 
+
+* `pivot_longer()`
+* `pivot_wider()` 
+* `separate()`
+* `unite()`
+
+---
+
+## Tidying Data: `pivot_longer()`
+
+#### When data has observations that should be columns, use `pivot_longer()`.  
+
+--
+
+Usually, this means that the dataset has column names that are not _names_ of variables but _values_ of variables; this violates the first rule of tidy data.  
+<br>
+Consider an example of untidy data from the previous slides
+
+--
+
+```{r, echo=FALSE}
+table4a[1:3,]
+```
+
+--
+
+1999 and 2000 are not variable names; they're values of an unlisted variable - **year**. Thus, they should be in their own column. The `pivot_longer()` function achieves this. To do so, it requires three main arguments: which columns are to be moved (`cols`), what should be the new column that these ex-columns are stored in (`names_to`), and what should be the new column that the previously stored values go to (`values_to`)?
+
+#### Try to solve this yourself before proceeding.
+
+---
+
+## Tidying Data: `pivot_longer()`
+
+--
+
+.pull-left[
+```{r}
+table4a
+```
+]
+
+--
+
+.pull-right[
+```{r}
+pivot_longer(data = table4a,
+             cols = c(`1999`, `2000`),
+             names_to = "year",
+             values_to = "cases")
+```
+
+Note that the resulting dataframe is now tidy: **Each variable in its own column**, each observation in its own row, each value in its own cell.
+
+The **unit of analysis** is the case count of a given country in a given year. 
+
+]
+
+---
+
+## Tidying Data: `pivot_wider()`
+
+#### When data has columns that should be observations, use `pivot_wider()`.
+
+--
+
+Usually, this will be because one observation is spread across multiple rows instead of just one; this violates the second rule of tidy data.  
+
+Consider another example we've looked at previously: 
+
+--
+
+```{r, echo=FALSE}
+table2[1:4,]
+```
+
+--
+
+Note that in this table, the **unit of analysis** is no longer "the case count of a given country in a given year," like it was in our tidy dataframe. Now, the unit of analysis is "a given type of count" in a given country in a given year. Wow - that's a loy of "given"s! And it is precisely why Afghanistan is listed four times here!  
+
+There is a row for Afghanistan's cases in 1999, a row for its population in 1999, a row for its cases in 2000, a row for its population in 2000, and so on. To tidy it, we need to move rows to be columns.
+
+---
+
+## Tidying Data: `pivot_wider()`
+
+--
+
+.pull-left[
+```{r}
+table2
+```
+]
+
+--
+
+.pull-right[
+```{r}
+pivot_wider(data = table2,
+            names_from = "type",
+            values_from = "count")
+```
+
+Note that the resulting dataframe is now tidy: Each variable in its own column, **each observation in its own row**, each value in its own cell.
+
+The **unit of analysis** is the case count of a given country in a given year. 
+
+]
+
+---
+
+## Tidying Data: `separate()`
+
+#### When data has cells with more than one value, use `separate()`.
+
+--
+
+Usually, this will involve the creation of a new column to store the new values from the over-filled cell. 
+
+<br>
+Consider `table3` from earlier: 
+
+--
+
+```{r, echo=FALSE}
+table3[1:4,]
+```
+
+Note that the cells in the rate column actually contain two values: the case count first, then the population count. This violates the third rule of tidy data. To tidy it, each value should have its own cell.  
+
+Can you guess what the new columns will be called? 
+
+---
+
+## Tidying Data: `separate()`
+
+--
+
+.pull-left[
+```{r}
+table3
+```
+]
+
+--
+
+.pull-right[
+```{r}
+separate(data = table3,
+         col = "rate",
+         into = c("cases", "population"),
+         sep = "/")
+```
+
+Note that the resulting dataframe is now tidy: Each variable in its own column, each observation in its own row, **each value in its own cell**.
+
+The **unit of analysis** is the case count of a given country in a given year. 
+
+]
+
+---
+
+## Tidying Data: `unite()`
+
+#### When data has cells with *less* than one value, use `unite()`.
+
+--
+
+This is rare, but it occurs when a meaningful value is spread across multiple columns. This violates the third rule of tidy data. 
+
+<br>
+Consider `table5`: 
+
+--
+
+```{r, echo=FALSE}
+table5[1:4,]
+```
+
+--
+
+Note that a meaningful value of year is obscurred by the columns `century` and `year`. Instead of having Afghanistan in 1999, we have Afghanistan in the 99th year of the 19th century (... which, come to think of it, would be 1899!). `Unite()` fixes this by combining the two columns 
+
+Can you guess what the new column will be called? 
+
+---
+
+## Tidying Data: `unite()`
+
+--
+
+.pull-left[
+```{r untidy table5}
+table5
+```
+]
+
+--
+
+.pull-right[
+```{r}
+unite(data = table5,
+      col = "year",
+      century, year)
+```
+
+Note that the new year column is not formatted correctly. This is because it is now separated with a "_". We can fix this with the `sep = ` argument. 
+
+]
+
+---
+
+## Tidying Data: `unite()`
+
+.pull-left[
+```{r untidy table5}
+```
+]
+
+.pull-right[
+```{r}
+unite(data = table5,
+      col = "year",
+      century, year,
+      sep = "")
+```
+
+Note that the resulting dataframe is now tidy: Each variable in its own column, each observation in its own row, **each value in its own cell**.
+
+The **unit of analysis** is the case count of a given country in a given year. 
+]
+
+---
+
+
+# Conclusion
+
+Tidy data follows three core principles: every variable gets its own column, every observation gets its own row, every value gets its own cell.  
+
+To clean our data into tidy data, we can use the following functions from the `dplyr` package:
+- `pivot_longer()` when observations are columns
+- `pivot_wider()` when columns are observations
+- `separate()` when a cell has more than 1 value
+- `unite()` when a cell has less than 1 meaningful value
+
+<br>
+
+#### References
+
+Wickam, Hadley and Garrett Grolemund, [*R for Data Science.*](https://r4ds.had.co.nz/index.html)
+
+---
+
+class: center, middle, inverse
+
+# Questions?
+
+## Email me! 
+
+### crabtreed@uchicago.edu

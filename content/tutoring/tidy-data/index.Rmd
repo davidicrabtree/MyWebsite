@@ -1,0 +1,54 @@
+---
+title: "Tidy Data"
+author: "David I. Crabtree"
+date: "7/18/2022"
+output: html_document
+external_link: ""
+image:
+  caption: 
+  focal_point: Smart
+links:
+- icon: fa-solid fa-graduation-cap
+  icon_pack: fas
+  name: Tutoring
+  url: https://www.wyzant.com/Tutors/davidic
+slides: 
+summary: What is tidy data? In this presentation I show how to define tidy data and clean messy datasets.
+tags:
+url_code: ""
+url_pdf: ""
+url_slides: "slides/tidying-data/"
+url_video: ""
+---
+
+```{r setup, include=FALSE}
+library(here)
+library(readxl)
+library(tidyverse)
+
+tidydata <- read_csv(here("static", "slides", "tidying-data", "fh_wb.csv"))
+untidydata <- read_excel(here("static", "slides", "tidying-data", "FreedomHouse.xlsx"), 
+                 sheet = 2, # read in data from the second sheet
+                 na = "-", # recode "-" to missing
+                 skip = 1) 
+
+```
+
+Consider two tables below. Which would be easier to work with? 
+
+
+### Table 1
+```{r, echo=FALSE}
+head(select(tidydata, 1, 4, 5, 6, 7), 10)
+```
+
+### Table 2
+```{r, echo=FALSE}
+head(select(untidydata, 1, 2, 3, 4, 5, 6), 10)
+```
+
+Hopefully it's clear that Table 1 is easier to work with. But why exactly is this? And how can messy Table 2 be made to look like clean Table 1? In this presentation I take a look at techniques for tidying data. 
+
+Recommended Readings:  
+
+- Chapter 12 in [R for Data Science](https://r4ds.had.co.nz/tidy-data.html), by Hadley Wickham and Garrett Grolemund
