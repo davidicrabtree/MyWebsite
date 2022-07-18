@@ -27,8 +27,10 @@ content:
   filter_button:
     - name: All
       tag: '*'
-    - name: IR Lessons
+    - name: International Relations
       tag: IR Theory
+    - name: RStudio & Data
+      tag: R Projects
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
