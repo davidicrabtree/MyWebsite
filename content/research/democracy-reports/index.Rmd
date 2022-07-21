@@ -24,11 +24,13 @@ url_code: "https://github.com/davidicrabtree/democracy-reports"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE)
 library(tidyverse)
 library(here)
 library(kableExtra)
 library(icons) 
+library(countrycode)
 
 
 fh_wb <- read_csv(here("content", "research", "democracy-reports", "files", "fh_wb.csv"))
@@ -58,18 +60,28 @@ How does the health of democracy vary from country to country within a given con
 
 I am currently working to expand this analysis to include measurements of inequality, and to explore the relationship between income and democracy on a global scale.  
 
-These profiles are fully reproducible. Check it out on `r  icons::fontawesome("github-alt")` [Github](https://github.com/davidicrabtree/democracy-reports). 
+These profiles are fully reproducible. Check it out on `r  icons::fontawesome("github-alt")` [Github](https://github.com/davidicrabtree/democracy-reports).
+
 
 ```{r, echo=FALSE}
 
-
-all_countries %>% 
-  cell_spec(row.names(.), "html", link = dt_url) %>%
-  kable("html", escape = FALSE, col.names =  "Country Profile") %>%
+as_tibble(all_countries) %>%
+  mutate("Country Profile" = cell_spec(value, "html", link = dt_url)) %>%
+  mutate("Flag" = sprintf('![](https://flagcdn.com/w80/%s.png)', tolower(countrycode(all_countries, origin = "country.name", destination = "iso2c")))) %>%
+  select(`Country Profile`, "Flag") %>%
+  kable(format = "html", escape = FALSE, col.names = c("Country Profile", "")) %>%
   kable_styling(bootstrap_options = c("hover", "striped", "condensed")) %>%
-  scroll_box(width = "100%", height = "800px")
+  scroll_box(width = "60%", height = "800px")
+
+
+
+
+# all_countries %>%
+#   cell_spec(row.names(.), "html", link = dt_url) %>%
+#   kable("html", escape = FALSE, col.names =  "Country Profile") %>%
+#   kable_styling(bootstrap_options = c("hover", "striped", "condensed")) %>%
+#   scroll_box(width = "100%", height = "800px")
 
 ```
-
 
 
