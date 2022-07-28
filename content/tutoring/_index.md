@@ -27,6 +27,6 @@ Beyond my work with students at ETSU, I am a registered tutor on [Wyzant](https:
 
 </div>
 
-If you'd like to meet an informal chat, send me an email at {{< icon name="paper-plane" pack="fas" >}} crabtreed@uchicago.edu.
+If you'd like to meet for an informal chat, send me an email at {{< icon name="paper-plane" pack="fas" >}} crabtreed@uchicago.edu.
 
 # Prior Lessons
