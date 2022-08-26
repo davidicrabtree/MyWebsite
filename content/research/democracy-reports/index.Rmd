@@ -23,6 +23,8 @@ url_code: "https://github.com/davidicrabtree/democracy-reports"
 
 ---
 
+![](files/worldwide_scores.png)
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,
                       warning = FALSE)
@@ -69,7 +71,7 @@ as_tibble(all_countries) %>%
   mutate("Country Profile" = cell_spec(value, "html", link = dt_url)) %>%
   mutate("Flag" = sprintf('![](https://flagcdn.com/w80/%s.png)', tolower(countrycode(all_countries, origin = "country.name", destination = "iso2c")))) %>%
   select(`Country Profile`, "Flag") %>%
-  kable(format = "html", escape = FALSE, col.names = c("Country Profile", "")) %>%
+  kable(format = "html", escape = FALSE, col.names = NULL) %>%
   kable_styling(bootstrap_options = c("hover", "striped", "condensed")) %>%
   scroll_box(width = "60%", height = "800px")
 
