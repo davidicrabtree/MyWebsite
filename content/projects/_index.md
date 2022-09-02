@@ -2,6 +2,6 @@
 header:
   caption: ""
   image: ""
-title: Research Projects
+title: Projects in R
 view: 2
 ---
