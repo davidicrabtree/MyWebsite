@@ -1,0 +1,1682 @@
+---
+title: "Democracy Reports"
+date: 2022-07-07T10:00:00-06:00
+publishDate: 2022-07-07T10:00:00-06:00
+draft: false
+
+# Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
+authors: [admin]
+
+# Abstract and optional shortened version.
+abstract: ""
+summary: "How do democracy ratings vary around the world? I use FreedomHouse data to find out."
+
+# Tags (optional).
+#   Set `tags: []` for no tags, or use the form `tags: ["A Tag", "Another Tag"]` for one or more tags.
+tags: ["R Projects"]
+
+# Links (optional).
+url_pdf: ""
+url_slides: ""
+url_video: ""
+url_code: "https://github.com/davidicrabtree/democracy-reports"
+
+---
+
+<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
+
+
+<p><img src="files/worldwide_scores.png" /></p>
+<div id="democracy-in-the-world" class="section level2">
+<h2>Democracy in the World</h2>
+<p>How does the health of democracy vary from country to country within a given continent? Using <a href="https://freedomhouse.org/report/freedom-world">FreedomHouse</a> data from 1973-2019, I generated country profiles for all instances where data was available. The profiles also incorporate economic indicators from the <a href="https://data.worldbank.org/indicator">World Bank</a>.</p>
+<p>I am currently working to expand this analysis to include measurements of inequality, and to explore the relationship between income and democracy on a global scale.</p>
+<p>These profiles are fully reproducible. Check it out on <svg viewBox="0 0 480 512" style="height:1em;position:relative;display:inline-block;top:.1em;" xmlns="http://www.w3.org/2000/svg"> <path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg> <a href="https://github.com/davidicrabtree/democracy-reports">Github</a>.</p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:800px; overflow-x: scroll; width:60%; ">
+<table class="table table-hover table-striped table-condensed" style="margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Afghanistan.html" style="     ">Afghanistan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/af.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Albania.html" style="     ">Albania</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/al.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Algeria.html" style="     ">Algeria</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/dz.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Andorra.html" style="     ">Andorra</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ad.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Angola.html" style="     ">Angola</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ao.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Antigua%20and%20Barbuda.html" style="     ">Antigua and Barbuda</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ag.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Argentina.html" style="     ">Argentina</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ar.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Armenia.html" style="     ">Armenia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/am.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Australia.html" style="     ">Australia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/au.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Austria.html" style="     ">Austria</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/at.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Azerbaijan.html" style="     ">Azerbaijan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/az.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Bahamas.html" style="     ">Bahamas</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bs.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Bahrain.html" style="     ">Bahrain</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bh.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Bangladesh.html" style="     ">Bangladesh</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bd.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Barbados.html" style="     ">Barbados</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bb.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Belarus.html" style="     ">Belarus</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/by.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Belgium.html" style="     ">Belgium</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/be.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Belize.html" style="     ">Belize</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bz.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Benin.html" style="     ">Benin</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bj.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Bhutan.html" style="     ">Bhutan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bt.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Bolivia.html" style="     ">Bolivia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bo.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Bosnia%20and%20Herzegovina.html" style="     ">Bosnia and Herzegovina</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ba.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Botswana.html" style="     ">Botswana</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bw.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Brazil.html" style="     ">Brazil</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/br.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Brunei.html" style="     ">Brunei</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bn.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Bulgaria.html" style="     ">Bulgaria</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bg.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Burkina%20Faso.html" style="     ">Burkina Faso</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bf.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Burundi.html" style="     ">Burundi</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/bi.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Cabo%20Verde.html" style="     ">Cabo Verde</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/cv.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Cambodia.html" style="     ">Cambodia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/kh.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Cameroon.html" style="     ">Cameroon</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/cm.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Canada.html" style="     ">Canada</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ca.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Central%20African%20Republic.html" style="     ">Central African Republic</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/cf.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Chad.html" style="     ">Chad</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/td.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Chile.html" style="     ">Chile</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/cl.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/China.html" style="     ">China</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/cn.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Colombia.html" style="     ">Colombia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/co.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Comoros.html" style="     ">Comoros</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/km.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Congo%20(Brazzaville).html" style="     ">Congo (Brazzaville)</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/cg.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Congo%20(Kinshasa).html" style="     ">Congo (Kinshasa)</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/cd.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Costa%20Rica.html" style="     ">Costa Rica</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/cr.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Cote%20d'Ivoire.html" style="     ">Cote d’Ivoire</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ci.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Croatia.html" style="     ">Croatia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/hr.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Cuba.html" style="     ">Cuba</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/cu.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Cyprus.html" style="     ">Cyprus</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/cy.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Czech%20Republic.html" style="     ">Czech Republic</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/cz.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Czechoslovakia.html" style="     ">Czechoslovakia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/NA.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Denmark.html" style="     ">Denmark</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/dk.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Djibouti.html" style="     ">Djibouti</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/dj.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Dominica.html" style="     ">Dominica</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/dm.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Dominican%20Republic.html" style="     ">Dominican Republic</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/do.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Ecuador.html" style="     ">Ecuador</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ec.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Egypt.html" style="     ">Egypt</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/eg.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/El%20Salvador.html" style="     ">El Salvador</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sv.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Equatorial%20Guinea.html" style="     ">Equatorial Guinea</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/gq.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Eritrea.html" style="     ">Eritrea</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/er.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Estonia.html" style="     ">Estonia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ee.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Eswatini.html" style="     ">Eswatini</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sz.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Ethiopia.html" style="     ">Ethiopia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/et.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Fiji.html" style="     ">Fiji</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/fj.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Finland.html" style="     ">Finland</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/fi.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/France.html" style="     ">France</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/fr.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Gabon.html" style="     ">Gabon</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ga.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Georgia.html" style="     ">Georgia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ge.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Germany,%20E..html" style="     ">Germany</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/de.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Germany,%20W..html" style="     ">Germany, E.</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/de.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Germany.html" style="     ">Germany, W.</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/de.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Ghana.html" style="     ">Ghana</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/gh.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Greece.html" style="     ">Greece</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/gr.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Grenada.html" style="     ">Grenada</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/gd.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Guatemala.html" style="     ">Guatemala</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/gt.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Guinea-Bissau.html" style="     ">Guinea</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/gn.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Guinea.html" style="     ">Guinea-Bissau</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/gw.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Guyana.html" style="     ">Guyana</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/gy.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Haiti.html" style="     ">Haiti</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ht.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Honduras.html" style="     ">Honduras</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/hn.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Hungary.html" style="     ">Hungary</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/hu.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Iceland.html" style="     ">Iceland</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/is.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/India.html" style="     ">India</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/in.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Indonesia.html" style="     ">Indonesia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/id.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Iran.html" style="     ">Iran</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ir.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Iraq.html" style="     ">Iraq</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/iq.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Ireland.html" style="     ">Ireland</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ie.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Israel.html" style="     ">Israel</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/il.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Italy.html" style="     ">Italy</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/it.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Jamaica.html" style="     ">Jamaica</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/jm.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Japan.html" style="     ">Japan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/jp.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Jordan.html" style="     ">Jordan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/jo.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Kazakhstan.html" style="     ">Kazakhstan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/kz.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Kenya.html" style="     ">Kenya</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ke.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Kiribati.html" style="     ">Kiribati</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ki.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Kosovo.html" style="     ">Kosovo</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/NA.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Kuwait.html" style="     ">Kuwait</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/kw.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Kyrgyzstan.html" style="     ">Kyrgyzstan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/kg.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Laos.html" style="     ">Laos</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/la.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Latvia.html" style="     ">Latvia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/lv.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Lebanon.html" style="     ">Lebanon</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/lb.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Lesotho.html" style="     ">Lesotho</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ls.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Liberia.html" style="     ">Liberia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/lr.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Libya.html" style="     ">Libya</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ly.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Liechtenstein.html" style="     ">Liechtenstein</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/li.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Lithuania.html" style="     ">Lithuania</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/lt.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Luxembourg.html" style="     ">Luxembourg</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/lu.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Madagascar.html" style="     ">Madagascar</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mg.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Malawi.html" style="     ">Malawi</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mw.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Malaysia.html" style="     ">Malaysia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/my.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Maldives.html" style="     ">Maldives</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mv.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Mali.html" style="     ">Mali</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ml.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Malta.html" style="     ">Malta</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mt.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Marshall%20Islands.html" style="     ">Marshall Islands</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mh.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Mauritania.html" style="     ">Mauritania</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mr.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Mauritius.html" style="     ">Mauritius</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mu.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Mexico.html" style="     ">Mexico</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mx.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Micronesia.html" style="     ">Micronesia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/NA.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Moldova.html" style="     ">Moldova</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/md.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Monaco.html" style="     ">Monaco</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mc.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Mongolia.html" style="     ">Mongolia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mn.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Montenegro.html" style="     ">Montenegro</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/me.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Morocco.html" style="     ">Morocco</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ma.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Mozambique.html" style="     ">Mozambique</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mz.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Myanmar.html" style="     ">Myanmar</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mm.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Namibia.html" style="     ">Namibia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/na.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Nauru.html" style="     ">Nauru</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/nr.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Nepal.html" style="     ">Nepal</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/np.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Netherlands.html" style="     ">Netherlands</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/nl.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/New%20Zealand.html" style="     ">New Zealand</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/nz.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Nicaragua.html" style="     ">Nicaragua</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ni.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Niger.html" style="     ">Niger</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ne.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Nigeria.html" style="     ">Nigeria</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ng.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/North%20Korea.html" style="     ">North Korea</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/kp.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/North%20Macedonia.html" style="     ">North Macedonia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/mk.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Norway.html" style="     ">Norway</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/no.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Oman.html" style="     ">Oman</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/om.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Pakistan.html" style="     ">Pakistan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/pk.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Palau.html" style="     ">Palau</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/pw.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Panama.html" style="     ">Panama</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/pa.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Papua%20New%20Guinea.html" style="     ">Papua New Guinea</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/pg.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Paraguay.html" style="     ">Paraguay</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/py.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Peru.html" style="     ">Peru</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/pe.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Philippines.html" style="     ">Philippines</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ph.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Poland.html" style="     ">Poland</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/pl.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Portugal.html" style="     ">Portugal</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/pt.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Qatar.html" style="     ">Qatar</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/qa.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Romania.html" style="     ">Romania</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ro.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Russia.html" style="     ">Russia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ru.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Rwanda.html" style="     ">Rwanda</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/rw.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Samoa.html" style="     ">Samoa</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ws.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/San%20Marino.html" style="     ">San Marino</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sm.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Sao%20Tome%20and%20Principe.html" style="     ">Sao Tome and Principe</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/st.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Saudi%20Arabia.html" style="     ">Saudi Arabia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sa.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Senegal.html" style="     ">Senegal</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sn.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Serbia%20and%20Montenegro.html" style="     ">Serbia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/rs.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Serbia.html" style="     ">Serbia and Montenegro</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/NA.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Seychelles.html" style="     ">Seychelles</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sc.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Sierra%20Leone.html" style="     ">Sierra Leone</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sl.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Singapore.html" style="     ">Singapore</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sg.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Slovakia.html" style="     ">Slovakia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sk.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Slovenia.html" style="     ">Slovenia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/si.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Solomon%20Islands.html" style="     ">Solomon Islands</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sb.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Somalia.html" style="     ">Somalia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/so.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/South%20Africa.html" style="     ">South Africa</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/za.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/South%20Korea.html" style="     ">South Korea</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/kr.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/South%20Sudan.html" style="     ">South Sudan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ss.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Spain.html" style="     ">Spain</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/es.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Sri%20Lanka.html" style="     ">Sri Lanka</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/lk.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/St.%20Kitts%20and%20Nevis.html" style="     ">St. Kitts and Nevis</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/kn.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/St.%20Lucia.html" style="     ">St. Lucia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/lc.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/St.%20Vincent%20and%20the%20Grenadines.html" style="     ">St. Vincent and the Grenadines</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/vc.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Sudan.html" style="     ">Sudan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sd.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Suriname.html" style="     ">Suriname</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sr.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Sweden.html" style="     ">Sweden</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/se.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Switzerland.html" style="     ">Switzerland</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ch.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Syria.html" style="     ">Syria</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/sy.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Taiwan.html" style="     ">Taiwan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/tw.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Tajikistan.html" style="     ">Tajikistan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/tj.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Tanzania.html" style="     ">Tanzania</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/tz.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Thailand.html" style="     ">Thailand</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/th.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/The%20Gambia.html" style="     ">The Gambia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/gm.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Timor-Leste.html" style="     ">Timor-Leste</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/tl.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Togo.html" style="     ">Togo</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/tg.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Tonga.html" style="     ">Tonga</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/to.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Trinidad%20and%20Tobago.html" style="     ">Trinidad and Tobago</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/tt.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Tunisia.html" style="     ">Tunisia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/tn.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Turkey.html" style="     ">Turkey</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/tr.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Turkmenistan.html" style="     ">Turkmenistan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/tm.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Tuvalu.html" style="     ">Tuvalu</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/tv.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Uganda.html" style="     ">Uganda</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ug.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Ukraine.html" style="     ">Ukraine</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ua.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/United%20Arab%20Emirates.html" style="     ">United Arab Emirates</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ae.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/United%20Kingdom.html" style="     ">United Kingdom</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/gb.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/United%20States.html" style="     ">United States</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/us.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Uruguay.html" style="     ">Uruguay</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/uy.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/USSR.html" style="     ">USSR</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ru.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Uzbekistan.html" style="     ">Uzbekistan</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/uz.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Vanuatu.html" style="     ">Vanuatu</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/vu.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Venezuela.html" style="     ">Venezuela</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ve.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Vietnam,%20N..html" style="     ">Vietnam</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/vn.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Vietnam,%20S..html" style="     ">Vietnam, N.</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/vn.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Vietnam.html" style="     ">Vietnam, S.</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/vn.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Yemen,%20N..html" style="     ">Yemen</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ye.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Yemen,%20S..html" style="     ">Yemen, N.</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ye.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Yemen.html" style="     ">Yemen, S.</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/ye.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Yugoslavia.html" style="     ">Yugoslavia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/NA.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Zambia.html" style="     ">Zambia</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/zm.png" />
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="files/reports/Zimbabwe.html" style="     ">Zimbabwe</a>
+</td>
+<td style="text-align:left;">
+<img src="https://flagcdn.com/w80/zw.png" />
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
