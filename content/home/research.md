@@ -7,14 +7,14 @@ widget: portfolio
 headless: true
 
 # Order that this section appears on the page.
-weight: 70
+weight: 20
 
 title: Research Projects
-subtitle: ''
+subtitle: 'in RStudio'
 
 content:
   # Page type to display. E.g. project.
-  page_type: research
+  page_type: projects
 
   # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
   filter_default: 0
@@ -24,11 +24,11 @@ content:
   # To show all items, set `tag` to "*".
   # To filter by a specific tag, set `tag` to an existing tag name.
   # To remove the toolbar, delete the entire `filter_button` block.
-  filter_button:
-    - name: All
-      tag: '*'
-    - name: R Projects
-      tag: R Projects
+  # filter_button:
+  #   - name: All
+  #     tag: '*'
+  #   - name: R Projects
+  #     tag: R Projects
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.

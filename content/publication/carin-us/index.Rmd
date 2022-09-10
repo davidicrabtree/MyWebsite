@@ -1,0 +1,36 @@
+---
+abstract: "How does the public decide who is deserving of welfare benefits? To shed light on this question, we investigate whether the CARIN principles of deservingness—specifically the ideas of control, attitude, reciprocity, identity, and need—impact the public's perception of American welfare target groups. We draw contrast between traditional welfare programs and pandemic-related programs to gain a more comparative understanding of the principles' effects as well as to determine what role the pandemic may play in shaping welfare perceptions. We report that positive, deserving social constructions exist for recipients of both traditional and pandemic-related welfare programs, and we find evidence that the distinction between traditional and pandemic-related programs is important for deservingness perceptions in the US. Overall, these results suggest the importance of the CARIN criteria in an American context." 
+author_notes:
+- Graduate Student - University of Chicago
+- Assistant Professor - Texas Tech University
+authors:
+- admin
+- Wesley W. Wehde
+date: "2022-09-06T00:00:00Z"
+doi: ""
+featured: true
+image:
+  caption: 
+  focal_point: ""
+  preview_only: false
+projects:
+publication: In *Social Policy and Administration*
+publication_short: 
+publication_types:
+- "2"
+publishDate: "2022-09-06T00:00:00Z"
+slides: 
+summary: How does the public decide who is deserving of welfare benefits?
+tags: []
+title: "Who Deserves What and Why During the COVID-19 Pandemic: Applying the CARIN principles of deservingness to the American welfare state"
+url_code: ""
+url_dataset: ""
+url_pdf: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: "https://doi.org/10.1111/spol.12859"
+url_video: ""
+---
+
+
