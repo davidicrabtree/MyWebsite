@@ -14,10 +14,10 @@ education:
 email: "crabtreed@uchicago.edu"
 highlight_name: true
 interests:
-- Economic Origins of Democracy
-- Comparative Political Development
-- Political Economy
+- Evasion of Presidential Term Limits
+- Democratic Erosion in Latin America
 - Statistical Computing in R
+- Quantitative Methods
 organizations:
 - name: University of Chicago
   url: https://www.uchicago.edu/
@@ -36,13 +36,9 @@ superuser: true
 title: David I. Crabtree
 ---
 
-I am a Political Science student at the University of Chicago, where I will receive my MA in 2023. My research interests are in comparative political development and the economic factors of democratization. I have two BAs in Political Science and International Affairs from East Tennessee State University, where I graduated summa cum laude in 2022.  
+I am a Political Science student at the University of Chicago, where I will receive my MA in 2023. My research interests are broadly in the domain of democratic erosion, especially in Latin America. My thesis project examines how that presidents try to stay in power longer than the limits in their constitutions permit. I have two BAs in Political Science and International Affairs from East Tennessee State University, where I graduated summa cum laude in 2022. As an undergraduate, I published two articles hypothesizing the role of COVID-19 in shaping welfare attitudes in the United States.    
 
-Before finding my place in comparative politics, I co-authored manuscripts related to the perception of welfare recipients in the United States during the COVID-19 pandemic. This work is currently under review in academic journals.  
-
-My work combines my substantive interests in democratization with my passion for graphical modeling and statistical computing in R. I am dedicated to the open source framework, and most of my projects can be found on my {{< icon name="github" pack="fab" >}}[Github](https://github.com/davidicrabtree).
-
-In my free time, I tutor research methodology and statistics for students of political science, psychology, sociology, and other social science disciplines. My tutoring background spans the course of two years, and some of my recent lessons can be found on this site.   
+My current work combines my substantive interests in comparative politics with my background in quantitative methods. I am dedicated to the open source framework, and most of my projects can be found on my {{< icon name="github" pack="fab" >}}[Github](https://github.com/davidicrabtree).
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "/authors/admin/CrabtreeCV.pdf" "newtab" >}}CV{{< /staticref >}}.

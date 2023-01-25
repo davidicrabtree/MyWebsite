@@ -19,9 +19,9 @@ main:
   - name: Tutoring
     url: 'tutoring'
     weight: 40
-  - name: Blog
-    url: 'blog'
-    weight: 50
+  # - name: Blog
+  #   url: 'blog'
+  #   weight: 50
   - name: Contact
     url: '#contact'
     weight: 60

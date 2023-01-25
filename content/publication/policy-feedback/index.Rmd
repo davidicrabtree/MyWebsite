@@ -1,0 +1,34 @@
+---
+abstract: "Can experience with one set of policies result in support for a set of different, but related, policies? To show how this is possible, we develop a new dimension of policy feedback effects missing from prior studies – outcome distance. We then examine what we call a middle-distance outcome and apply this concept to the case of welfare attitudes in the United States. A novel counterfactual survey design is used to estimate the within-subject effects of experience with pandemic-related relief efforts (that is, stimulus checks, unemployment assistance) on attitudes towards broader welfare programmes like TANF, SNAP, SSI and Medicaid. The evidence suggests that attitudes towards broader welfare initiatives may have become more supportive as a result of the pandemic and associated policies, implying that specific policies and events can have feedback effects on outcomes that are some medium-distance away, such as other policies of a similar type. Future research ought to further explore this proposed dimension of feedback effects." 
+author_notes:
+- Graduate Student - University of Chicago
+- Assistant Professor - Texas Tech University
+authors:
+- admin
+- Wesley W. Wehde
+date: "2023-01-06T00:00:00Z"
+doi: ""
+featured: true
+image:
+  caption: 
+  focal_point: ""
+  preview_only: false
+projects:
+publication: In *Policy & Politics*
+publication_short: 
+publication_types:
+- "2"
+publishDate: "2023-01-06T00:00:00Z"
+slides: 
+summary: Can experience with one policy create support for related policies?
+tags: []
+title: "Examining Policy Feedback Effects from COVID-19 on Social Welfare Support: Developing an outcome distance dimension"
+url_code: ""
+url_dataset: ""
+url_pdf: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: "https://doi.org/10.1332/030557321X16684225165558"
+url_video: ""
+---
