@@ -10,15 +10,15 @@ main:
   - name: CV
     url: authors/admin/CrabtreeCV.pdf
     weight: 20
-  - name: Publications
-    url: 'publication'
-    weight: 25
+  # - name: Publications
+  #   url: 'publication'
+  #   weight: 25
   - name: R Projects
     url: 'projects'
     weight: 30
-  - name: Tutoring
-    url: 'tutoring'
-    weight: 40
+  # - name: Tutoring
+  #   url: 'tutoring'
+  #   weight: 40
   # - name: Blog
   #   url: 'blog'
   #   weight: 50
