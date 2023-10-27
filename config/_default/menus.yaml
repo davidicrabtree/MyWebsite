@@ -13,7 +13,7 @@ main:
   # - name: Publications
   #   url: 'publication'
   #   weight: 25
-  - name: R Projects
+  - name: Code Samples
     url: 'projects'
     weight: 30
   # - name: Tutoring
@@ -22,9 +22,9 @@ main:
   # - name: Blog
   #   url: 'blog'
   #   weight: 50
-  - name: Contact
-    url: '#contact'
-    weight: 60
+  # - name: Contact
+  #   url: '#contact'
+  #   weight: 60
 
   # - name: Talks
   #   url: '#talks'

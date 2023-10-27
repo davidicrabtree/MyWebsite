@@ -14,13 +14,14 @@ education:
 email: "crabtreed@uchicago.edu"
 highlight_name: true
 interests:
-- Evasion of Presidential Term Limits
-- Democratic Erosion in Latin America
-- Statistical Computing in R
-- Quantitative Methods
+- Chronological order of democratic backsliding
+- Evasion of presidential term limits
+- Democratic erosion in Latin America
+- Statistical computing in R
+- Quantitative methods
 organizations:
 - name: University of Chicago
-  url: https://www.uchicago.edu/
+  url: https://political-science.uchicago.edu/directory/david-crabtree
 role: Graduate Political Science Student
 social:
 - icon: envelope
@@ -36,9 +37,9 @@ superuser: true
 title: David I. Crabtree
 ---
 
-I am a Political Science student at the University of Chicago, where I will receive my MA in 2023. My research interests are broadly in the domain of democratic erosion, especially in Latin America. My thesis project examines how that presidents try to stay in power longer than the limits in their constitutions permit. I have two BAs in Political Science and International Affairs from East Tennessee State University, where I graduated summa cum laude in 2022. As an undergraduate, I published two articles hypothesizing the role of COVID-19 in shaping welfare attitudes in the United States.    
+I am an Instructional Assistant in the Department of Political Science at the University of Chicago, where I received my MA in 2023. I am interested in the temporal sequence of democratic backsliding, quantitative methods, and the politics of presidential term limits. My thesis examined which democratic institutions were frequently undermined early and late in declining democracies with term limits. Merging a new dataset of term limit evaders with existing indicators of democratic decline, it considers how term limits, by constraining executive tenure, might incentivize would-be autocrats to dismantle some democratic institutions before others. An ongoing project studies the effectiveness of unamendable term limit provisions.  
 
-My current work combines my substantive interests in comparative politics with my background in quantitative methods. I am dedicated to the open source framework, and most of my projects can be found on my {{< icon name="github" pack="fab" >}}[Github](https://github.com/davidicrabtree).
+I am dedicated to the open source framework, and most of my projects can be found on my {{< icon name="github" pack="fab" >}}[Github](https://github.com/davidicrabtree).  
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "/authors/admin/CrabtreeCV.pdf" "newtab" >}}CV{{< /staticref >}}.
