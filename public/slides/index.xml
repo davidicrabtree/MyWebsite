@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Slides | David I. Crabtree</title>
+    <link>https://davidicrabtree.com/slides/</link>
+      <atom:link href="https://davidicrabtree.com/slides/index.xml" rel="self" type="application/rss+xml" />
+    <description>Slides</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 04 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Presentation Ninja</title>
+      <link>https://davidicrabtree.com/slides/messinaround/realism/</link>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/slides/messinaround/realism/</guid>
+      <description>
+&lt;script src=&#34;https://davidicrabtree.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://davidicrabtree.com/rmarkdown-libs/datatables-css/datatables-crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://davidicrabtree.com/rmarkdown-libs/datatables-binding/datatables.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://davidicrabtree.com/rmarkdown-libs/jquery/jquery-3.6.0.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://davidicrabtree.com/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;link href=&#34;https://davidicrabtree.com/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://davidicrabtree.com/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://davidicrabtree.com/rmarkdown-libs/crosstalk/css/crosstalk.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://davidicrabtree.com/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;typography&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Typography&lt;/h2&gt;
+&lt;p&gt;Text can be &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, &lt;del&gt;strikethrough&lt;/del&gt;, or &lt;code&gt;inline code&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#colors&#34;&gt;Link to another slide&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;lorem-ipsum&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Lorem Ipsum&lt;/h3&gt;
+&lt;p&gt;Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor.
+Lacinia neque mollis nascetur neque urna velit bibendum.
+Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Dolor cubilia nostra nunc sodales&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Consectetur aliquet mauris blandit&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ipsum dis nec porttitor urna sed&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table style=&#34;width:6%;&#34;&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;5%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;name: colors&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;## Colors&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;.left-column[
+Text color&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;#3&#34;&gt;Link Color&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;strong&gt;Bold Color&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;em&gt;Italic Color&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;Inline Code&lt;/code&gt;
+]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;.right-column[
+Lorem ipsum dolor sit amet, &lt;a href=&#34;#3&#34;&gt;consectetur adipiscing elit (link)&lt;/a&gt;,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Erat nam at lectus urna.
+Pellentesque elit ullamcorper &lt;strong&gt;dignissim cras tincidunt (bold)&lt;/strong&gt; lobortis feugiat.
+&lt;em&gt;Eros donec ac odio tempor&lt;/em&gt; orci dapibus ultrices.
+Id porta nibh venenatis cras sed felis eget velit aliquet.
+Aliquam id diam maecenas ultricies mi.
+Enim sit amet
+&lt;code&gt;code_color(&#34;inline&#34;)&lt;/code&gt;
+venenatis urna cursus eget nunc scelerisque viverra.]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;big-topic-or-inverse-slides&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Big Topic or Inverse Slides &lt;code&gt;#&lt;/code&gt;&lt;/h1&gt;
+&lt;div id=&#34;slide-headings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slide Headings &lt;code&gt;##&lt;/code&gt;&lt;/h2&gt;
+&lt;div id=&#34;sub-slide-headings&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Sub-slide Headings &lt;code&gt;###&lt;/code&gt;&lt;/h3&gt;
+&lt;div id=&#34;bold-call-out&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Bold Call-Out &lt;code&gt;####&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;This is a normal paragraph text. Only use header levels 1-4.&lt;/p&gt;
+&lt;div id=&#34;possible-but-not-recommended&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Possible, but not recommended &lt;code&gt;#####&lt;/code&gt;&lt;/h5&gt;
+&lt;div id=&#34;definitely-dont-use-h6&#34; class=&#34;section level6&#34;&gt;
+&lt;h6&gt;Definitely don’t use h6 &lt;code&gt;######&lt;/code&gt;&lt;/h6&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;left-column-headings&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Left-Column Headings&lt;/h1&gt;
+&lt;p&gt;.left-column[
+## First&lt;/p&gt;
+&lt;div id=&#34;second&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Second&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;third&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Third&lt;/h2&gt;
+&lt;p&gt;]&lt;/p&gt;
+&lt;p&gt;.right-column[
+Dolor quis aptent mus a dictum ultricies egestas.&lt;/p&gt;
+&lt;p&gt;Amet egestas neque tempor fermentum proin massa!&lt;/p&gt;
+&lt;p&gt;Dolor elementum fermentum pharetra lectus arcu pulvinar.
+]&lt;/p&gt;
+&lt;table style=&#34;width:6%;&#34;&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;5%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;class: inverse center middle&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;# Topic Changing Interstitial&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;class: inverse center middle&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;blockquote&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Blockquote&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote following a header.&lt;/p&gt;
+&lt;p&gt;When something is important enough, you do it even if the odds are not in your favor.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;code-blocks&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Code Blocks&lt;/h3&gt;
+&lt;div id=&#34;r-code&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;R Code&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(gapminder) +
+  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
+  geom_point() +
+  facet_wrap(~year)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;javascript&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;JavaScript&lt;/h4&gt;
+&lt;pre class=&#34;js&#34;&gt;&lt;code&gt;var fun = function lang(l) {
+  dateformat.i18n = require(&amp;#39;./lang/&amp;#39; + l)
+  return true;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;more-r-code&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;More R Code&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dplyr::starwars %&amp;gt;% dplyr::slice_sample(n = 4)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cli::cli_alert_success(&amp;quot;It worked!&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## v It worked!&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;–&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;message(&amp;quot;Just a friendly message&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Just a friendly message&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;–&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;warning(&amp;quot;This could be bad...&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: This could be bad...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;–&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;stop(&amp;quot;I hope you&amp;#39;re sitting down for this&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Error in eval(expr, envir, enclos): I hope you&amp;#39;re sitting down for this&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;exclude: false&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tibble::as_tibble(mtcars)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 32 x 11
+##      mpg   cyl  disp    hp  drat    wt  qsec    vs    am  gear  carb
+##    &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+##  1  21       6  160    110  3.9   2.62  16.5     0     1     4     4
+##  2  21       6  160    110  3.9   2.88  17.0     0     1     4     4
+##  3  22.8     4  108     93  3.85  2.32  18.6     1     1     4     1
+##  4  21.4     6  258    110  3.08  3.22  19.4     1     0     3     1
+##  5  18.7     8  360    175  3.15  3.44  17.0     0     0     3     2
+##  6  18.1     6  225    105  2.76  3.46  20.2     1     0     3     1
+##  7  14.3     8  360    245  3.21  3.57  15.8     0     0     3     4
+##  8  24.4     4  147.    62  3.69  3.19  20       1     0     4     2
+##  9  22.8     4  141.    95  3.92  3.15  22.9     1     0     4     2
+## 10  19.2     6  168.   123  3.92  3.44  18.3     1     0     4     4
+## # ... with 22 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::kable(head(mtcars), format = &amp;#39;html&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+mpg
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+cyl
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+disp
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+hp
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+drat
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+wt
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+qsec
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+vs
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+am
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+gear
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+carb
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mazda RX4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+21.0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+6
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+160
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+110
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.90
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.620
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+16.46
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mazda RX4 Wag
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+21.0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+6
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+160
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+110
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.90
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.875
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+17.02
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Datsun 710
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+22.8
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+108
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+93
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.85
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.320
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+18.61
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Hornet 4 Drive
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+21.4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+6
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+258
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+110
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.08
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.215
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+19.44
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Hornet Sportabout
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+18.7
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+8
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+360
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+175
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.15
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.440
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+17.02
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Valiant
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+18.1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+6
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+225
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+105
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.76
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.460
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+20.22
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table style=&#34;width:6%;&#34;&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;5%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;exclude: false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;r DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;{=html} &amp;lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:100%;height:auto;&#34; class=&#34;datatables html-widget&#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&amp;gt;{&#34;x&#34;:{&#34;filter&#34;:&#34;none&#34;,&#34;vertical&#34;:false,&#34;fillContainer&#34;:false,&#34;data&#34;:[[&#34;Mazda RX4&#34;,&#34;Mazda RX4 Wag&#34;,&#34;Datsun 710&#34;,&#34;Hornet 4 Drive&#34;,&#34;Hornet Sportabout&#34;,&#34;Valiant&#34;],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],&#34;container&#34;:&#34;&amp;lt;table class=\&#34;display\&#34;&amp;gt;\n  &amp;lt;thead&amp;gt;\n    &amp;lt;tr&amp;gt;\n      &amp;lt;th&amp;gt; &amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;mpg&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;cyl&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;disp&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;hp&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;drat&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;wt&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;qsec&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;vs&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;am&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;gear&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;carb&amp;lt;\/th&amp;gt;\n    &amp;lt;\/tr&amp;gt;\n  &amp;lt;\/thead&amp;gt;\n&amp;lt;\/table&amp;gt;&#34;,&#34;options&#34;:{&#34;pageLength&#34;:4,&#34;columnDefs&#34;:[{&#34;className&#34;:&#34;dt-right&#34;,&#34;targets&#34;:[1,2,3,4,5,6,7,8,9,10,11]},{&#34;orderable&#34;:false,&#34;targets&#34;:0}],&#34;order&#34;:[],&#34;autoWidth&#34;:false,&#34;orderClasses&#34;:false,&#34;lengthMenu&#34;:[4,10,25,50,100]}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;layout: true&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lists&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Lists&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;.pull-left[
+#### Here is an unordered list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Item foo&lt;/li&gt;
+&lt;li&gt;Item bar&lt;/li&gt;
+&lt;li&gt;Item baz&lt;/li&gt;
+&lt;li&gt;Item zip
+]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;.pull-right[&lt;/p&gt;
+&lt;div id=&#34;and-an-ordered-list&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;And an ordered list:&lt;/h4&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Item one&lt;/li&gt;
+&lt;li&gt;Item two&lt;/li&gt;
+&lt;li&gt;Item three&lt;/li&gt;
+&lt;li&gt;Item four
+]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;and-a-nested-list&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;And a nested list:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;level 1 item
+&lt;ul&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;li&gt;level 2 item
+&lt;ul&gt;
+&lt;li&gt;level 3 item&lt;/li&gt;
+&lt;li&gt;level 3 item&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;level 1 item
+&lt;ul&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;level 1 item
+&lt;ul&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;level 1 item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;nesting-an-ol-in-ul-in-an-ol&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Nesting an ol in ul in an ol&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;level 1 item (ul)
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;level 2 item (ol)&lt;/li&gt;
+&lt;li&gt;level 2 item (ol)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;level 1 item (ul)
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;level 2 item (ol)&lt;/li&gt;
+&lt;li&gt;level 2 item (ol)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;level 4 item (ol)&lt;/li&gt;
+&lt;li&gt;level 4 item (ol)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;level 1 item (ul)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+(g &amp;lt;- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidicrabtree.com/slides/messinAround/realism_files/figure-html/plot-example-1.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
+  ggtitle(&amp;quot;A Plot About Cars&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;.footnote[Requires &lt;code&gt;{showtext}&lt;/code&gt;]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;layout: false&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;square-image&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Square image&lt;/h2&gt;
+&lt;center&gt;
+&lt;img src=&#34;https://octodex.github.com/images/labtocat.png&#34; alt=&#34;GithHub Octocat&#34; height=&#34;400px&#34; /&gt;
+&lt;/center&gt;
+&lt;p&gt;.footnote[GitHub Octocat]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;wide-image&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Wide image&lt;/h3&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://docs.github.com/assets/images/help/repository/branching.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;A wide image with a diagram of branching in git.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;.footnote[Wide images scale to 100% slide width]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-images&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Two images&lt;/h2&gt;
+&lt;p&gt;.pull-left[
+&lt;img src=&#34;https://octodex.github.com/images/motherhubbertocat.png&#34; alt=&#34;A GitHub Octocat, style “mother hubber”&#34; /&gt;]&lt;/p&gt;
+&lt;p&gt;.pull-right[
+&lt;img src=&#34;https://octodex.github.com/images/dinotocat.png&#34; alt=&#34;A GitHub Octocat, style “dinotcat”&#34; /&gt;]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;definition-lists-can-be-used-with-html-syntax.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Definition lists can be used with HTML syntax.&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;
+Name
+&lt;/dt&gt;
+&lt;dd&gt;
+Godzilla
+&lt;/dd&gt;
+&lt;dt&gt;
+Born
+&lt;/dt&gt;
+&lt;dd&gt;
+1952
+&lt;/dd&gt;
+&lt;dt&gt;
+Birthplace
+&lt;/dt&gt;
+&lt;dd&gt;
+Japan
+&lt;/dd&gt;
+&lt;dt&gt;
+Color
+&lt;/dt&gt;
+&lt;dd&gt;
+Green
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;hr /&gt;
+&lt;p&gt;class: center, middle&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;thanks&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Thanks!&lt;/h1&gt;
+&lt;p&gt;Slides created via the R packages:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/gadenbuie/xaringanthemer&#34;&gt;gadenbuie/xaringanthemer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The chakra comes from &lt;a href=&#34;https://remarkjs.com&#34;&gt;remark.js&lt;/a&gt;, &lt;a href=&#34;http://yihui.name/knitr&#34;&gt;&lt;strong&gt;knitr&lt;/strong&gt;&lt;/a&gt;, and &lt;a href=&#34;https://rmarkdown.rstudio.com&#34;&gt;R Markdown&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Realism</title>
+      <link>https://davidicrabtree.com/slides/realism/</link>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/slides/realism/</guid>
+      <description>&lt;h1 id=&#34;realism&#34;&gt;Realism&lt;/h1&gt;
+&lt;p&gt;An International Relations Theory&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;when-do-states-go-to-war&#34;&gt;When do states go to war?&lt;/h2&gt;
+&lt;span style=&#34;font-size: 35px&#34;&gt;  
+What common themes did you notice in the Melian Dialogue and the Munich Conference? 
+&lt;br&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Why do you think Athens decided to invade Melos?
+&lt;/span&gt;
+&lt;br&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Why do you think Hitler invaded Czechoslovakia after agreeing not to?
+&lt;/span&gt;
+&lt;br&gt; 
+&lt;span class=&#34;fragment &#34; &gt;
+  Realism offers answers to these questions. It is one framework for predicting when states will go to war, and it explains why states are so inherently aggressive.
+&lt;/span&gt;  
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;five-core-assumptions-of-realism&#34;&gt;Five Core Assumptions of Realism&lt;/h2&gt;
+&lt;h5 id=&#34;according-to-john-mearsheimer&#34;&gt;According to John Mearsheimer&lt;/h5&gt;
+&lt;span style=&#34;font-size: 35px&#34;&gt;  
+&lt;ol&gt;
+&lt;li&gt;The international system is anarchic&lt;/li&gt;
+&lt;li&gt;States possess some inherent military capability&lt;/li&gt;
+&lt;li&gt;One state can&amp;rsquo;t know another state&amp;rsquo;s intentions&lt;/li&gt;
+&lt;li&gt;The primary goal of states is survival&lt;/li&gt;
+&lt;li&gt;States are rational actors&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;assumption-1-anarchy&#34;&gt;Assumption 1: Anarchy&lt;/h3&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt;  
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Anarchy refers to the structure of the international system&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When IR scholars refer to &amp;ldquo;anarchy,&amp;rdquo; they do not mean chaos or disorder&lt;/li&gt;
+&lt;li&gt;States have &lt;em&gt;no higher authority to appeal to during crisis.&lt;/em&gt; No government over governments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;911 Scenario&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Anarchy creates incentive for distrust and self-help&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;God helps states that help themselves.&amp;rdquo; - John Mearsheimer
+&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;assumption-2-offensive-military-capabilities&#34;&gt;Assumption 2: Offensive Military Capabilities&lt;/h3&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt;  
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;All states possess &lt;em&gt;some&lt;/em&gt; military capability&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Thus, by virtue of existing, a state in the international system poses a threat to other states via its military.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Because of this, fear is a characteristic of life in the international system. States do and should fear the capabilities of other states, according to realists.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To do otherwise is naive.&lt;/li&gt;
+&lt;li&gt;Today&amp;rsquo;s allies are tomorrow&amp;rsquo;s enemies, and vice-versa.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;assumption-3-unknown-intentions&#34;&gt;Assumption 3: Unknown Intentions&lt;/h3&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt;   
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A state can never be sure that another state will not use its military offensively.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Specifically highlights the uncertain nature of alliances&lt;/li&gt;
+&lt;li&gt;Consider Sparta in the Melian Dialogue: Why did they not help their ally, the Melians?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Does not necessarily mean all states are aggressive - the point is, it&amp;rsquo;s impossible to &lt;em&gt;know.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Essentially, assumption 2 is all states have aggressive &lt;em&gt;capacity&lt;/em&gt;, and assumption 3 pertains to the unknowability of aggressive &lt;em&gt;intention&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Result: States should prepare for the worst.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;assumption-4-survival-is-the-primary-goal-of-states&#34;&gt;Assumption 4: Survival is the Primary Goal of States&lt;/h3&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt; 
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The emphasis here is that - before &lt;em&gt;ANYTHING&lt;/em&gt; else - states are concerned about survival.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Implications: Tertiary motives like ideology, alliances, trade, international commitments, etc. are only important &lt;em&gt;after&lt;/em&gt; a state&amp;rsquo;s survival is secured. Survival is &lt;em&gt;always&lt;/em&gt; first.&lt;/li&gt;
+&lt;li&gt;Consider Maslow&amp;rsquo;s Hierarchy of Needs, applied to states.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Joseph Stalin: &amp;ldquo;We can and must build socialism. But in order to do so we first of all ahve to exist.&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;assumption-5-states-are-rational-actors&#34;&gt;Assumption 5: States are Rational Actors&lt;/h2&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt; 
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Emphasis here is that states are &lt;em&gt;aware&lt;/em&gt; of both the implications of their own actions &lt;em&gt;and&lt;/em&gt; (more to the point) the implications of other states&amp;rsquo; actions and preferences.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example: If a state builds up its military, other states may grow nervous due to the implications for their own security.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;three-predictions-from-realist-assumptions&#34;&gt;Three Predictions from Realist Assumptions&lt;/h3&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt; 
+&lt;ol&gt;
+&lt;li&gt;Fear&lt;/li&gt;
+&lt;li&gt;Self-Help&lt;/li&gt;
+&lt;li&gt;Power Maximization&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/span&gt;</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://davidicrabtree.com/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/slides/example/</guid>
+      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://revealjs.com/pdf-export/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Eating...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Three
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% speaker_note %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Only the speaker can read these notes
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Press &lt;span class=&#34;sb&#34;&gt;`S`&lt;/span&gt; key to view
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  {{% /speaker_note %}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/media/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/media/boards.jpg&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;my-style&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;navy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

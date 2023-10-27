@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Tidy Data</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="David I. Crabtree" />
+    <meta name="date" content="2022-07-18" />
+    <script src="index_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Tidy Data
+]
+.subtitle[
+## What It Is and How To Do It
+]
+.author[
+### David I. Crabtree
+]
+.date[
+### 2022-07-18
+]
+
+---
+
+
+
+
+
+
+## What is Tidy Data?
+
+#### Consider these two dataframes. Which one looks easier to work with? 
+
+--
+
+.pull-left[
+##### Frame 1
+
+```
+## # A tibble: 6 x 3
+##   country      year    pr
+##   &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt;
+## 1 Afghanistan  1973     4
+## 2 Afghanistan  1974     1
+## 3 Afghanistan  1975     1
+## 4 Afghanistan  1976     1
+## 5 Afghanistan  1977     1
+## 6 Afghanistan  1978     2
+```
+]
+
+--
+
+.pull-right[
+##### Frame 2
+
+```
+## # A tibble: 6 x 3
+##   `Year(s) Under Review` `1972` `1973`
+##   &lt;chr&gt;                  &lt;chr&gt;  &lt;chr&gt; 
+## 1 &lt;NA&gt;                   PR     PR    
+## 2 Afghanistan            4      7     
+## 3 Albania                7      7     
+## 4 Algeria                6      6     
+## 5 Andorra                4      4     
+## 6 Angola                 &lt;NA&gt;   &lt;NA&gt;
+```
+]
+
+--
+
+&lt;br&gt; 
+
+They might seem similar at first glance, but the frame on the left will be significantly easier to work with. In the following slides I'll explain why. 
+
+---
+
+.pull-left[
+## What is Tidy Data?
+
+##### There are three rules that all Tidy Data must follow:
+
+1. **Each variable gets its own column.**  
+1. **Each observation gets its own row.**  
+1. **Each value gets its own cell.** 
+
+Every tidy dataset will follow these rules.  
+]
+
+--
+
+.pull-right[
+
+### Consider an example
+
+
+```r
+head(starwars[1:4])
+```
+
+```
+## # A tibble: 6 x 4
+##   name           height  mass hair_color 
+##   &lt;chr&gt;           &lt;int&gt; &lt;dbl&gt; &lt;chr&gt;      
+## 1 Luke Skywalker    172    77 blond      
+## 2 C-3PO             167    75 &lt;NA&gt;       
+## 3 R2-D2              96    32 &lt;NA&gt;       
+## 4 Darth Vader       202   136 none       
+## 5 Leia Organa       150    49 brown      
+## 6 Owen Lars         178   120 brown, grey
+```
+]
+
+
+
+---
+
+## What is Tidy Data: Which of these tables is tidy? 
+
+.pull-left[
+
+
+```r
+table1[1:4,]
+```
+
+```
+## # A tibble: 4 x 4
+##   country      year cases population
+##   &lt;chr&gt;       &lt;int&gt; &lt;int&gt;      &lt;int&gt;
+## 1 Afghanistan  1999   745   19987071
+## 2 Afghanistan  2000  2666   20595360
+## 3 Brazil       1999 37737  172006362
+## 4 Brazil       2000 80488  174504898
+```
+
+```r
+table2[1:4,]
+```
+
+```
+## # A tibble: 4 x 4
+##   country      year type          count
+##   &lt;chr&gt;       &lt;int&gt; &lt;chr&gt;         &lt;int&gt;
+## 1 Afghanistan  1999 cases           745
+## 2 Afghanistan  1999 population 19987071
+## 3 Afghanistan  2000 cases          2666
+## 4 Afghanistan  2000 population 20595360
+```
+
+]  
+
+.pull-right[
+
+```r
+table3[1:4,]
+```
+
+```
+## # A tibble: 4 x 3
+##   country      year rate           
+##   &lt;chr&gt;       &lt;int&gt; &lt;chr&gt;          
+## 1 Afghanistan  1999 745/19987071   
+## 2 Afghanistan  2000 2666/20595360  
+## 3 Brazil       1999 37737/172006362
+## 4 Brazil       2000 80488/174504898
+```
+
+#### Example continues on next slide
+
+]
+
+---
+
+## What is Tidy Data: Which of these datasets is tidy? 
+
+
+
+.pull-left[
+
+```r
+table4a[1:3,] # cases
+```
+
+```
+## # A tibble: 3 x 3
+##   country     `1999` `2000`
+##   &lt;chr&gt;        &lt;int&gt;  &lt;int&gt;
+## 1 Afghanistan    745   2666
+## 2 Brazil       37737  80488
+## 3 China       212258 213766
+```
+]
+
+.pull-right[
+
+```r
+table4b[1:3,]  # population
+```
+
+```
+## # A tibble: 3 x 3
+##   country         `1999`     `2000`
+##   &lt;chr&gt;            &lt;int&gt;      &lt;int&gt;
+## 1 Afghanistan   19987071   20595360
+## 2 Brazil       172006362  174504898
+## 3 China       1272915272 1280428583
+```
+]
+
+---
+
+## What is Tidy Data?
+
+#### Table 1 is the only table that is tidy.
+
+--
+
+
+```r
+table1[1:4,]
+```
+
+```
+## # A tibble: 4 x 4
+##   country      year cases population
+##   &lt;chr&gt;       &lt;int&gt; &lt;int&gt;      &lt;int&gt;
+## 1 Afghanistan  1999   745   19987071
+## 2 Afghanistan  2000  2666   20595360
+## 3 Brazil       1999 37737  172006362
+## 4 Brazil       2000 80488  174504898
+```
+
+--
+
+### Note why this data is tidy
+(1) Every variable has its own column.  
+(2) Every observation has its own row.  
+(3) Every value has its own cell.  
+
+---
+
+class: inverse, middle, center
+
+# Tidying Data: How to Do It 
+
+---
+
+## Tidying Data
+
+#### So what do we do if data has broken one (or more!) of the rules of tidy data? 
+
+--
+
+#### Well, we bring it back into compliance!
+
+--
+
+In order to tidy - or wrangle - the data, we will use the following functions from the `dplyr` package. 
+
+* `pivot_longer()`
+* `pivot_wider()` 
+* `separate()`
+* `unite()`
+
+---
+
+## Tidying Data: `pivot_longer()`
+
+#### When data has observations that should be columns, use `pivot_longer()`.  
+
+--
+
+Usually, this means that the dataset has column names that are not _names_ of variables but _values_ of variables; this violates the first rule of tidy data.  
+&lt;br&gt;
+Consider an example of untidy data from the previous slides
+
+--
+
+
+```
+## # A tibble: 3 x 3
+##   country     `1999` `2000`
+##   &lt;chr&gt;        &lt;int&gt;  &lt;int&gt;
+## 1 Afghanistan    745   2666
+## 2 Brazil       37737  80488
+## 3 China       212258 213766
+```
+
+--
+
+1999 and 2000 are not variable names; they're values of an unlisted variable - **year**. Thus, they should be in their own column. The `pivot_longer()` function achieves this. To do so, it requires three main arguments: which columns are to be moved (`cols`), what should be the new column that these ex-columns are stored in (`names_to`), and what should be the new column that the previously stored values go to (`values_to`)?
+
+#### Try to solve this yourself before proceeding.
+
+---
+
+## Tidying Data: `pivot_longer()`
+
+--
+
+.pull-left[
+
+```r
+table4a
+```
+
+```
+## # A tibble: 3 x 3
+##   country     `1999` `2000`
+## * &lt;chr&gt;        &lt;int&gt;  &lt;int&gt;
+## 1 Afghanistan    745   2666
+## 2 Brazil       37737  80488
+## 3 China       212258 213766
+```
+]
+
+--
+
+.pull-right[
+
+```r
+pivot_longer(data = table4a,
+             cols = c(`1999`, `2000`),
+             names_to = "year",
+             values_to = "cases")
+```
+
+```
+## # A tibble: 6 x 3
+##   country     year   cases
+##   &lt;chr&gt;       &lt;chr&gt;  &lt;int&gt;
+## 1 Afghanistan 1999     745
+## 2 Afghanistan 2000    2666
+## 3 Brazil      1999   37737
+## 4 Brazil      2000   80488
+## 5 China       1999  212258
+## 6 China       2000  213766
+```
+
+Note that the resulting dataframe is now tidy: **Each variable in its own column**, each observation in its own row, each value in its own cell.
+
+The **unit of analysis** is the case count of a given country in a given year. 
+
+]
+
+---
+
+## Tidying Data: `pivot_wider()`
+
+#### When data has columns that should be observations, use `pivot_wider()`.
+
+--
+
+Usually, this will be because one observation is spread across multiple rows instead of just one; this violates the second rule of tidy data.  
+
+Consider another example we've looked at previously: 
+
+--
+
+
+```
+## # A tibble: 4 x 4
+##   country      year type          count
+##   &lt;chr&gt;       &lt;int&gt; &lt;chr&gt;         &lt;int&gt;
+## 1 Afghanistan  1999 cases           745
+## 2 Afghanistan  1999 population 19987071
+## 3 Afghanistan  2000 cases          2666
+## 4 Afghanistan  2000 population 20595360
+```
+
+--
+
+Note that in this table, the **unit of analysis** is no longer "the case count of a given country in a given year," like it was in our tidy dataframe. Now, the unit of analysis is "a given type of count" in a given country in a given year. Wow - that's a loy of "given"s! And it is precisely why Afghanistan is listed four times here!  
+
+There is a row for Afghanistan's cases in 1999, a row for its population in 1999, a row for its cases in 2000, a row for its population in 2000, and so on. To tidy it, we need to move rows to be columns.
+
+---
+
+## Tidying Data: `pivot_wider()`
+
+--
+
+.pull-left[
+
+```r
+table2
+```
+
+```
+## # A tibble: 12 x 4
+##    country      year type            count
+##    &lt;chr&gt;       &lt;int&gt; &lt;chr&gt;           &lt;int&gt;
+##  1 Afghanistan  1999 cases             745
+##  2 Afghanistan  1999 population   19987071
+##  3 Afghanistan  2000 cases            2666
+##  4 Afghanistan  2000 population   20595360
+##  5 Brazil       1999 cases           37737
+##  6 Brazil       1999 population  172006362
+##  7 Brazil       2000 cases           80488
+##  8 Brazil       2000 population  174504898
+##  9 China        1999 cases          212258
+## 10 China        1999 population 1272915272
+## 11 China        2000 cases          213766
+## 12 China        2000 population 1280428583
+```
+]
+
+--
+
+.pull-right[
+
+```r
+pivot_wider(data = table2,
+            names_from = "type",
+            values_from = "count")
+```
+
+```
+## # A tibble: 6 x 4
+##   country      year  cases population
+##   &lt;chr&gt;       &lt;int&gt;  &lt;int&gt;      &lt;int&gt;
+## 1 Afghanistan  1999    745   19987071
+## 2 Afghanistan  2000   2666   20595360
+## 3 Brazil       1999  37737  172006362
+## 4 Brazil       2000  80488  174504898
+## 5 China        1999 212258 1272915272
+## 6 China        2000 213766 1280428583
+```
+
+Note that the resulting dataframe is now tidy: Each variable in its own column, **each observation in its own row**, each value in its own cell.
+
+The **unit of analysis** is the case count of a given country in a given year. 
+
+]
+
+---
+
+## Tidying Data: `separate()`
+
+#### When data has cells with more than one value, use `separate()`.
+
+--
+
+Usually, this will involve the creation of a new column to store the new values from the over-filled cell. 
+
+&lt;br&gt;
+Consider `table3` from earlier: 
+
+--
+
+
+```
+## # A tibble: 4 x 3
+##   country      year rate           
+##   &lt;chr&gt;       &lt;int&gt; &lt;chr&gt;          
+## 1 Afghanistan  1999 745/19987071   
+## 2 Afghanistan  2000 2666/20595360  
+## 3 Brazil       1999 37737/172006362
+## 4 Brazil       2000 80488/174504898
+```
+
+Note that the cells in the rate column actually contain two values: the case count first, then the population count. This violates the third rule of tidy data. To tidy it, each value should have its own cell.  
+
+Can you guess what the new columns will be called? 
+
+---
+
+## Tidying Data: `separate()`
+
+--
+
+.pull-left[
+
+```r
+table3
+```
+
+```
+## # A tibble: 6 x 3
+##   country      year rate             
+## * &lt;chr&gt;       &lt;int&gt; &lt;chr&gt;            
+## 1 Afghanistan  1999 745/19987071     
+## 2 Afghanistan  2000 2666/20595360    
+## 3 Brazil       1999 37737/172006362  
+## 4 Brazil       2000 80488/174504898  
+## 5 China        1999 212258/1272915272
+## 6 China        2000 213766/1280428583
+```
+]
+
+--
+
+.pull-right[
+
+```r
+separate(data = table3,
+         col = "rate",
+         into = c("cases", "population"),
+         sep = "/")
+```
+
+```
+## # A tibble: 6 x 4
+##   country      year cases  population
+##   &lt;chr&gt;       &lt;int&gt; &lt;chr&gt;  &lt;chr&gt;     
+## 1 Afghanistan  1999 745    19987071  
+## 2 Afghanistan  2000 2666   20595360  
+## 3 Brazil       1999 37737  172006362 
+## 4 Brazil       2000 80488  174504898 
+## 5 China        1999 212258 1272915272
+## 6 China        2000 213766 1280428583
+```
+
+Note that the resulting dataframe is now tidy: Each variable in its own column, each observation in its own row, **each value in its own cell**.
+
+The **unit of analysis** is the case count of a given country in a given year. 
+
+]
+
+---
+
+## Tidying Data: `unite()`
+
+#### When data has cells with *less* than one value, use `unite()`.
+
+--
+
+This is rare, but it occurs when a meaningful value is spread across multiple columns. This violates the third rule of tidy data. 
+
+&lt;br&gt;
+Consider `table5`: 
+
+--
+
+
+```
+## # A tibble: 4 x 4
+##   country     century year  rate           
+##   &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;          
+## 1 Afghanistan 19      99    745/19987071   
+## 2 Afghanistan 20      00    2666/20595360  
+## 3 Brazil      19      99    37737/172006362
+## 4 Brazil      20      00    80488/174504898
+```
+
+--
+
+Note that a meaningful value of year is obscurred by the columns `century` and `year`. Instead of having Afghanistan in 1999, we have Afghanistan in the 99th year of the 19th century (... which, come to think of it, would be 1899!). `Unite()` fixes this by combining the two columns 
+
+Can you guess what the new column will be called? 
+
+---
+
+## Tidying Data: `unite()`
+
+--
+
+.pull-left[
+
+```r
+table5
+```
+
+```
+## # A tibble: 6 x 4
+##   country     century year  rate             
+## * &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;            
+## 1 Afghanistan 19      99    745/19987071     
+## 2 Afghanistan 20      00    2666/20595360    
+## 3 Brazil      19      99    37737/172006362  
+## 4 Brazil      20      00    80488/174504898  
+## 5 China       19      99    212258/1272915272
+## 6 China       20      00    213766/1280428583
+```
+]
+
+--
+
+.pull-right[
+
+```r
+unite(data = table5,
+      col = "year",
+      century, year)
+```
+
+```
+## # A tibble: 6 x 3
+##   country     year  rate             
+##   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;            
+## 1 Afghanistan 19_99 745/19987071     
+## 2 Afghanistan 20_00 2666/20595360    
+## 3 Brazil      19_99 37737/172006362  
+## 4 Brazil      20_00 80488/174504898  
+## 5 China       19_99 212258/1272915272
+## 6 China       20_00 213766/1280428583
+```
+
+Note that the new year column is not formatted correctly. This is because it is now separated with a "_". We can fix this with the `sep = ` argument. 
+
+]
+
+---
+
+## Tidying Data: `unite()`
+
+.pull-left[
+
+```r
+table5
+```
+
+```
+## # A tibble: 6 x 4
+##   country     century year  rate             
+## * &lt;chr&gt;       &lt;chr&gt;   &lt;chr&gt; &lt;chr&gt;            
+## 1 Afghanistan 19      99    745/19987071     
+## 2 Afghanistan 20      00    2666/20595360    
+## 3 Brazil      19      99    37737/172006362  
+## 4 Brazil      20      00    80488/174504898  
+## 5 China       19      99    212258/1272915272
+## 6 China       20      00    213766/1280428583
+```
+]
+
+.pull-right[
+
+```r
+unite(data = table5,
+      col = "year",
+      century, year,
+      sep = "")
+```
+
+```
+## # A tibble: 6 x 3
+##   country     year  rate             
+##   &lt;chr&gt;       &lt;chr&gt; &lt;chr&gt;            
+## 1 Afghanistan 1999  745/19987071     
+## 2 Afghanistan 2000  2666/20595360    
+## 3 Brazil      1999  37737/172006362  
+## 4 Brazil      2000  80488/174504898  
+## 5 China       1999  212258/1272915272
+## 6 China       2000  213766/1280428583
+```
+
+Note that the resulting dataframe is now tidy: Each variable in its own column, each observation in its own row, **each value in its own cell**.
+
+The **unit of analysis** is the case count of a given country in a given year. 
+]
+
+---
+
+
+# Conclusion
+
+Tidy data follows three core principles: every variable gets its own column, every observation gets its own row, every value gets its own cell.  
+
+To clean our data into tidy data, we can use the following functions from the `dplyr` package:
+- `pivot_longer()` when observations are columns
+- `pivot_wider()` when columns are observations
+- `separate()` when a cell has more than 1 value
+- `unite()` when a cell has less than 1 meaningful value
+
+&lt;br&gt;
+
+#### References
+
+Wickam, Hadley and Garrett Grolemund, [*R for Data Science.*](https://r4ds.had.co.nz/index.html)
+
+---
+
+class: center, middle, inverse
+
+# Questions?
+
+## Email me! 
+
+### crabtreed@uchicago.edu
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

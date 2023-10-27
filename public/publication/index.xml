@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | David I. Crabtree</title>
+    <link>https://davidicrabtree.com/publication/</link>
+      <atom:link href="https://davidicrabtree.com/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 06 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://davidicrabtree.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>Publications</title>
+      <link>https://davidicrabtree.com/publication/</link>
+    </image>
+    
+    <item>
+      <title>Examining Policy Feedback Effects from COVID-19 on Social Welfare Support: Developing an outcome distance dimension</title>
+      <link>https://davidicrabtree.com/publication/policy-feedback/</link>
+      <pubDate>Fri, 06 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/publication/policy-feedback/</guid>
+      <description>
+
+
+</description>
+    </item>
+    
+    <item>
+      <title>Who Deserves What and Why During the COVID-19 Pandemic: Applying the CARIN principles of deservingness to the American welfare state</title>
+      <link>https://davidicrabtree.com/publication/carin-us/</link>
+      <pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/publication/carin-us/</guid>
+      <description>
+
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,2746 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David I. Crabtree</title>
+    <link>https://davidicrabtree.com/</link>
+      <atom:link href="https://davidicrabtree.com/index.xml" rel="self" type="application/rss+xml" />
+    <description>David I. Crabtree</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://davidicrabtree.com/media/icon_hua2ec155b4296a9c9791d015323e16eb5_11927_512x512_fill_lanczos_center_3.png</url>
+      <title>David I. Crabtree</title>
+      <link>https://davidicrabtree.com/</link>
+    </image>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>https://davidicrabtree.com/talk/example-talk/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/talk/example-talk/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Examining Policy Feedback Effects from COVID-19 on Social Welfare Support: Developing an outcome distance dimension</title>
+      <link>https://davidicrabtree.com/publication/policy-feedback/</link>
+      <pubDate>Fri, 06 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/publication/policy-feedback/</guid>
+      <description>
+
+
+</description>
+    </item>
+    
+    <item>
+      <title>Who Deserves What and Why During the COVID-19 Pandemic: Applying the CARIN principles of deservingness to the American welfare state</title>
+      <link>https://davidicrabtree.com/publication/carin-us/</link>
+      <pubDate>Tue, 06 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/publication/carin-us/</guid>
+      <description>
+
+
+</description>
+    </item>
+    
+    <item>
+      <title>Tidy Data</title>
+      <link>https://davidicrabtree.com/tutoring/tidy-data/</link>
+      <pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/tutoring/tidy-data/</guid>
+      <description>
+
+
+&lt;p&gt;Consider two tables below. Which would be easier to work with?&lt;/p&gt;
+&lt;div id=&#34;table-1&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Table 1&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 10 x 5
+##    country      year    pr    cl status     
+##    &amp;lt;chr&amp;gt;       &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;      
+##  1 Afghanistan  1973     4     3 Partly Free
+##  2 Afghanistan  1974     1     2 Not Free   
+##  3 Afghanistan  1975     1     2 Not Free   
+##  4 Afghanistan  1976     1     2 Not Free   
+##  5 Afghanistan  1977     1     2 Not Free   
+##  6 Afghanistan  1978     2     2 Not Free   
+##  7 Afghanistan  1979     1     1 Not Free   
+##  8 Afghanistan  1980     1     1 Not Free   
+##  9 Afghanistan  1981     1     1 Not Free   
+## 10 Afghanistan  1982     1     1 Not Free&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;table-2&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Table 2&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 10 x 6
+##    `Year(s) Under Review` `1972` ...3  ...4   `1973` ...6 
+##    &amp;lt;chr&amp;gt;                  &amp;lt;chr&amp;gt;  &amp;lt;chr&amp;gt; &amp;lt;chr&amp;gt;  &amp;lt;chr&amp;gt;  &amp;lt;chr&amp;gt;
+##  1 &amp;lt;NA&amp;gt;                   PR     CL    Status PR     CL   
+##  2 Afghanistan            4      5     PF     7      6    
+##  3 Albania                7      7     NF     7      7    
+##  4 Algeria                6      6     NF     6      6    
+##  5 Andorra                4      3     PF     4      4    
+##  6 Angola                 &amp;lt;NA&amp;gt;   &amp;lt;NA&amp;gt;  &amp;lt;NA&amp;gt;   &amp;lt;NA&amp;gt;   &amp;lt;NA&amp;gt; 
+##  7 Antigua and Barbuda    &amp;lt;NA&amp;gt;   &amp;lt;NA&amp;gt;  &amp;lt;NA&amp;gt;   &amp;lt;NA&amp;gt;   &amp;lt;NA&amp;gt; 
+##  8 Argentina              6      3     PF     2      2    
+##  9 Armenia                &amp;lt;NA&amp;gt;   &amp;lt;NA&amp;gt;  &amp;lt;NA&amp;gt;   &amp;lt;NA&amp;gt;   &amp;lt;NA&amp;gt; 
+## 10 Australia              1      1     F      1      1&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Hopefully it’s clear that Table 1 is easier to work with. But why exactly is this? And how can messy Table 2 be made to look like clean Table 1? In this presentation I take a look at techniques for tidying data.&lt;/p&gt;
+&lt;p&gt;Recommended Readings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chapter 12 in &lt;a href=&#34;https://r4ds.had.co.nz/tidy-data.html&#34;&gt;R for Data Science&lt;/a&gt;, by Hadley Wickham and Garrett Grolemund&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Liberalism</title>
+      <link>https://davidicrabtree.com/tutoring/liberalism/</link>
+      <pubDate>Mon, 11 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/tutoring/liberalism/</guid>
+      <description>&lt;p&gt;What factors increase the probability of peace between states? Can domestic political institutions, economic interdependence, and international law mitigate the effects of anarchy?&lt;/p&gt;
+&lt;p&gt;In this lecture, we explore the theoretical perspective of liberalism and its answers to these questions.&lt;/p&gt;
+&lt;p&gt;Recommended Readings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oneal, John &amp;amp; Bruce Russett (1999). &amp;ldquo;The Kantian Peace.&amp;rdquo; &lt;em&gt;World Politics&lt;/em&gt;. &lt;a href=&#34;https://www.jstor.org/stable/25054099&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.jstor.org/stable/25054099&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Keohane, Robert (1998). &amp;ldquo;International Institutions: Can Interdependence Work?&amp;rdquo; &lt;em&gt;Foreign Policy&lt;/em&gt;. &lt;a href=&#34;https://www.jstor.org/stable/1149278&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.jstor.org/stable/1149278&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Nye, Joseph (1990). &amp;ldquo;Soft Power.&amp;rdquo; &lt;em&gt;Foreign Policy&lt;/em&gt;. &lt;a href=&#34;https://www.jstor.org/stable/1148580&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.jstor.org/stable/1148580&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Democracy Reports</title>
+      <link>https://davidicrabtree.com/projects/democracy-reports/</link>
+      <pubDate>Thu, 07 Jul 2022 10:00:00 -0600</pubDate>
+      <guid>https://davidicrabtree.com/projects/democracy-reports/</guid>
+      <description>
+&lt;script src=&#34;https://davidicrabtree.com/projects/democracy-reports/index_files/kePrint/kePrint.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://davidicrabtree.com/projects/democracy-reports/index_files/lightable/lightable.css&#34; rel=&#34;stylesheet&#34; /&gt;
+
+
+&lt;p&gt;&lt;img src=&#34;files/worldwide_scores.png&#34; /&gt;&lt;/p&gt;
+&lt;div id=&#34;democracy-in-the-world&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Democracy in the World&lt;/h2&gt;
+&lt;p&gt;How does the health of democracy vary from country to country within a given continent? Using &lt;a href=&#34;https://freedomhouse.org/report/freedom-world&#34;&gt;FreedomHouse&lt;/a&gt; data from 1973-2019, I generated country profiles for all instances where data was available. The profiles also incorporate economic indicators from the &lt;a href=&#34;https://data.worldbank.org/indicator&#34;&gt;World Bank&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I am currently working to expand this analysis to include measurements of inequality, and to explore the relationship between income and democracy on a global scale.&lt;/p&gt;
+&lt;p&gt;These profiles are fully reproducible. Check it out on &lt;svg viewBox=&#34;0 0 480 512&#34; style=&#34;height:1em;position:relative;display:inline-block;top:.1em;&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt; &lt;path d=&#34;M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z&#34;&gt;&lt;/path&gt;&lt;/svg&gt; &lt;a href=&#34;https://github.com/davidicrabtree/democracy-reports&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
+&lt;div style=&#34;border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:800px; overflow-x: scroll; width:60%; &#34;&gt;
+&lt;table class=&#34;table table-hover table-striped table-condensed&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Afghanistan.html&#34; style=&#34;     &#34;&gt;Afghanistan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/af.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Albania.html&#34; style=&#34;     &#34;&gt;Albania&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/al.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Algeria.html&#34; style=&#34;     &#34;&gt;Algeria&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/dz.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Andorra.html&#34; style=&#34;     &#34;&gt;Andorra&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ad.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Angola.html&#34; style=&#34;     &#34;&gt;Angola&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ao.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Antigua%20and%20Barbuda.html&#34; style=&#34;     &#34;&gt;Antigua and Barbuda&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ag.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Argentina.html&#34; style=&#34;     &#34;&gt;Argentina&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ar.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Armenia.html&#34; style=&#34;     &#34;&gt;Armenia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/am.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Australia.html&#34; style=&#34;     &#34;&gt;Australia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/au.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Austria.html&#34; style=&#34;     &#34;&gt;Austria&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/at.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Azerbaijan.html&#34; style=&#34;     &#34;&gt;Azerbaijan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/az.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Bahamas.html&#34; style=&#34;     &#34;&gt;Bahamas&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bs.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Bahrain.html&#34; style=&#34;     &#34;&gt;Bahrain&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bh.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Bangladesh.html&#34; style=&#34;     &#34;&gt;Bangladesh&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bd.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Barbados.html&#34; style=&#34;     &#34;&gt;Barbados&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bb.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Belarus.html&#34; style=&#34;     &#34;&gt;Belarus&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/by.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Belgium.html&#34; style=&#34;     &#34;&gt;Belgium&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/be.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Belize.html&#34; style=&#34;     &#34;&gt;Belize&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bz.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Benin.html&#34; style=&#34;     &#34;&gt;Benin&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bj.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Bhutan.html&#34; style=&#34;     &#34;&gt;Bhutan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bt.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Bolivia.html&#34; style=&#34;     &#34;&gt;Bolivia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bo.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Bosnia%20and%20Herzegovina.html&#34; style=&#34;     &#34;&gt;Bosnia and Herzegovina&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ba.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Botswana.html&#34; style=&#34;     &#34;&gt;Botswana&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bw.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Brazil.html&#34; style=&#34;     &#34;&gt;Brazil&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/br.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Brunei.html&#34; style=&#34;     &#34;&gt;Brunei&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bn.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Bulgaria.html&#34; style=&#34;     &#34;&gt;Bulgaria&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bg.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Burkina%20Faso.html&#34; style=&#34;     &#34;&gt;Burkina Faso&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bf.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Burundi.html&#34; style=&#34;     &#34;&gt;Burundi&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/bi.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Cabo%20Verde.html&#34; style=&#34;     &#34;&gt;Cabo Verde&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/cv.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Cambodia.html&#34; style=&#34;     &#34;&gt;Cambodia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/kh.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Cameroon.html&#34; style=&#34;     &#34;&gt;Cameroon&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/cm.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Canada.html&#34; style=&#34;     &#34;&gt;Canada&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ca.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Central%20African%20Republic.html&#34; style=&#34;     &#34;&gt;Central African Republic&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/cf.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Chad.html&#34; style=&#34;     &#34;&gt;Chad&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/td.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Chile.html&#34; style=&#34;     &#34;&gt;Chile&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/cl.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/China.html&#34; style=&#34;     &#34;&gt;China&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/cn.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Colombia.html&#34; style=&#34;     &#34;&gt;Colombia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/co.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Comoros.html&#34; style=&#34;     &#34;&gt;Comoros&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/km.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Congo%20(Brazzaville).html&#34; style=&#34;     &#34;&gt;Congo (Brazzaville)&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/cg.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Congo%20(Kinshasa).html&#34; style=&#34;     &#34;&gt;Congo (Kinshasa)&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/cd.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Costa%20Rica.html&#34; style=&#34;     &#34;&gt;Costa Rica&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/cr.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Cote%20d&#39;Ivoire.html&#34; style=&#34;     &#34;&gt;Cote d’Ivoire&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ci.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Croatia.html&#34; style=&#34;     &#34;&gt;Croatia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/hr.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Cuba.html&#34; style=&#34;     &#34;&gt;Cuba&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/cu.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Cyprus.html&#34; style=&#34;     &#34;&gt;Cyprus&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/cy.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Czech%20Republic.html&#34; style=&#34;     &#34;&gt;Czech Republic&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/cz.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Czechoslovakia.html&#34; style=&#34;     &#34;&gt;Czechoslovakia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/NA.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Denmark.html&#34; style=&#34;     &#34;&gt;Denmark&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/dk.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Djibouti.html&#34; style=&#34;     &#34;&gt;Djibouti&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/dj.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Dominica.html&#34; style=&#34;     &#34;&gt;Dominica&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/dm.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Dominican%20Republic.html&#34; style=&#34;     &#34;&gt;Dominican Republic&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/do.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Ecuador.html&#34; style=&#34;     &#34;&gt;Ecuador&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ec.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Egypt.html&#34; style=&#34;     &#34;&gt;Egypt&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/eg.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/El%20Salvador.html&#34; style=&#34;     &#34;&gt;El Salvador&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sv.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Equatorial%20Guinea.html&#34; style=&#34;     &#34;&gt;Equatorial Guinea&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/gq.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Eritrea.html&#34; style=&#34;     &#34;&gt;Eritrea&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/er.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Estonia.html&#34; style=&#34;     &#34;&gt;Estonia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ee.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Eswatini.html&#34; style=&#34;     &#34;&gt;Eswatini&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sz.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Ethiopia.html&#34; style=&#34;     &#34;&gt;Ethiopia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/et.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Fiji.html&#34; style=&#34;     &#34;&gt;Fiji&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/fj.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Finland.html&#34; style=&#34;     &#34;&gt;Finland&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/fi.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/France.html&#34; style=&#34;     &#34;&gt;France&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/fr.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Gabon.html&#34; style=&#34;     &#34;&gt;Gabon&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ga.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Georgia.html&#34; style=&#34;     &#34;&gt;Georgia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ge.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Germany,%20E..html&#34; style=&#34;     &#34;&gt;Germany&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/de.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Germany,%20W..html&#34; style=&#34;     &#34;&gt;Germany, E.&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/de.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Germany.html&#34; style=&#34;     &#34;&gt;Germany, W.&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/de.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Ghana.html&#34; style=&#34;     &#34;&gt;Ghana&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/gh.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Greece.html&#34; style=&#34;     &#34;&gt;Greece&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/gr.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Grenada.html&#34; style=&#34;     &#34;&gt;Grenada&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/gd.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Guatemala.html&#34; style=&#34;     &#34;&gt;Guatemala&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/gt.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Guinea-Bissau.html&#34; style=&#34;     &#34;&gt;Guinea&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/gn.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Guinea.html&#34; style=&#34;     &#34;&gt;Guinea-Bissau&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/gw.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Guyana.html&#34; style=&#34;     &#34;&gt;Guyana&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/gy.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Haiti.html&#34; style=&#34;     &#34;&gt;Haiti&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ht.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Honduras.html&#34; style=&#34;     &#34;&gt;Honduras&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/hn.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Hungary.html&#34; style=&#34;     &#34;&gt;Hungary&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/hu.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Iceland.html&#34; style=&#34;     &#34;&gt;Iceland&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/is.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/India.html&#34; style=&#34;     &#34;&gt;India&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/in.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Indonesia.html&#34; style=&#34;     &#34;&gt;Indonesia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/id.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Iran.html&#34; style=&#34;     &#34;&gt;Iran&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ir.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Iraq.html&#34; style=&#34;     &#34;&gt;Iraq&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/iq.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Ireland.html&#34; style=&#34;     &#34;&gt;Ireland&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ie.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Israel.html&#34; style=&#34;     &#34;&gt;Israel&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/il.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Italy.html&#34; style=&#34;     &#34;&gt;Italy&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/it.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Jamaica.html&#34; style=&#34;     &#34;&gt;Jamaica&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/jm.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Japan.html&#34; style=&#34;     &#34;&gt;Japan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/jp.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Jordan.html&#34; style=&#34;     &#34;&gt;Jordan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/jo.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Kazakhstan.html&#34; style=&#34;     &#34;&gt;Kazakhstan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/kz.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Kenya.html&#34; style=&#34;     &#34;&gt;Kenya&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ke.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Kiribati.html&#34; style=&#34;     &#34;&gt;Kiribati&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ki.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Kosovo.html&#34; style=&#34;     &#34;&gt;Kosovo&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/NA.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Kuwait.html&#34; style=&#34;     &#34;&gt;Kuwait&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/kw.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Kyrgyzstan.html&#34; style=&#34;     &#34;&gt;Kyrgyzstan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/kg.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Laos.html&#34; style=&#34;     &#34;&gt;Laos&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/la.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Latvia.html&#34; style=&#34;     &#34;&gt;Latvia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/lv.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Lebanon.html&#34; style=&#34;     &#34;&gt;Lebanon&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/lb.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Lesotho.html&#34; style=&#34;     &#34;&gt;Lesotho&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ls.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Liberia.html&#34; style=&#34;     &#34;&gt;Liberia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/lr.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Libya.html&#34; style=&#34;     &#34;&gt;Libya&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ly.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Liechtenstein.html&#34; style=&#34;     &#34;&gt;Liechtenstein&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/li.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Lithuania.html&#34; style=&#34;     &#34;&gt;Lithuania&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/lt.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Luxembourg.html&#34; style=&#34;     &#34;&gt;Luxembourg&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/lu.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Madagascar.html&#34; style=&#34;     &#34;&gt;Madagascar&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mg.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Malawi.html&#34; style=&#34;     &#34;&gt;Malawi&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mw.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Malaysia.html&#34; style=&#34;     &#34;&gt;Malaysia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/my.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Maldives.html&#34; style=&#34;     &#34;&gt;Maldives&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mv.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Mali.html&#34; style=&#34;     &#34;&gt;Mali&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ml.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Malta.html&#34; style=&#34;     &#34;&gt;Malta&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mt.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Marshall%20Islands.html&#34; style=&#34;     &#34;&gt;Marshall Islands&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mh.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Mauritania.html&#34; style=&#34;     &#34;&gt;Mauritania&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mr.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Mauritius.html&#34; style=&#34;     &#34;&gt;Mauritius&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mu.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Mexico.html&#34; style=&#34;     &#34;&gt;Mexico&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mx.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Micronesia.html&#34; style=&#34;     &#34;&gt;Micronesia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/NA.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Moldova.html&#34; style=&#34;     &#34;&gt;Moldova&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/md.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Monaco.html&#34; style=&#34;     &#34;&gt;Monaco&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mc.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Mongolia.html&#34; style=&#34;     &#34;&gt;Mongolia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mn.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Montenegro.html&#34; style=&#34;     &#34;&gt;Montenegro&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/me.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Morocco.html&#34; style=&#34;     &#34;&gt;Morocco&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ma.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Mozambique.html&#34; style=&#34;     &#34;&gt;Mozambique&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mz.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Myanmar.html&#34; style=&#34;     &#34;&gt;Myanmar&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mm.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Namibia.html&#34; style=&#34;     &#34;&gt;Namibia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/na.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Nauru.html&#34; style=&#34;     &#34;&gt;Nauru&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/nr.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Nepal.html&#34; style=&#34;     &#34;&gt;Nepal&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/np.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Netherlands.html&#34; style=&#34;     &#34;&gt;Netherlands&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/nl.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/New%20Zealand.html&#34; style=&#34;     &#34;&gt;New Zealand&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/nz.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Nicaragua.html&#34; style=&#34;     &#34;&gt;Nicaragua&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ni.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Niger.html&#34; style=&#34;     &#34;&gt;Niger&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ne.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Nigeria.html&#34; style=&#34;     &#34;&gt;Nigeria&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ng.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/North%20Korea.html&#34; style=&#34;     &#34;&gt;North Korea&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/kp.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/North%20Macedonia.html&#34; style=&#34;     &#34;&gt;North Macedonia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/mk.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Norway.html&#34; style=&#34;     &#34;&gt;Norway&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/no.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Oman.html&#34; style=&#34;     &#34;&gt;Oman&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/om.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Pakistan.html&#34; style=&#34;     &#34;&gt;Pakistan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/pk.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Palau.html&#34; style=&#34;     &#34;&gt;Palau&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/pw.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Panama.html&#34; style=&#34;     &#34;&gt;Panama&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/pa.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Papua%20New%20Guinea.html&#34; style=&#34;     &#34;&gt;Papua New Guinea&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/pg.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Paraguay.html&#34; style=&#34;     &#34;&gt;Paraguay&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/py.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Peru.html&#34; style=&#34;     &#34;&gt;Peru&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/pe.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Philippines.html&#34; style=&#34;     &#34;&gt;Philippines&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ph.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Poland.html&#34; style=&#34;     &#34;&gt;Poland&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/pl.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Portugal.html&#34; style=&#34;     &#34;&gt;Portugal&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/pt.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Qatar.html&#34; style=&#34;     &#34;&gt;Qatar&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/qa.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Romania.html&#34; style=&#34;     &#34;&gt;Romania&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ro.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Russia.html&#34; style=&#34;     &#34;&gt;Russia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ru.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Rwanda.html&#34; style=&#34;     &#34;&gt;Rwanda&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/rw.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Samoa.html&#34; style=&#34;     &#34;&gt;Samoa&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ws.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/San%20Marino.html&#34; style=&#34;     &#34;&gt;San Marino&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sm.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Sao%20Tome%20and%20Principe.html&#34; style=&#34;     &#34;&gt;Sao Tome and Principe&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/st.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Saudi%20Arabia.html&#34; style=&#34;     &#34;&gt;Saudi Arabia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sa.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Senegal.html&#34; style=&#34;     &#34;&gt;Senegal&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sn.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Serbia%20and%20Montenegro.html&#34; style=&#34;     &#34;&gt;Serbia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/rs.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Serbia.html&#34; style=&#34;     &#34;&gt;Serbia and Montenegro&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/NA.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Seychelles.html&#34; style=&#34;     &#34;&gt;Seychelles&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sc.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Sierra%20Leone.html&#34; style=&#34;     &#34;&gt;Sierra Leone&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sl.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Singapore.html&#34; style=&#34;     &#34;&gt;Singapore&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sg.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Slovakia.html&#34; style=&#34;     &#34;&gt;Slovakia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sk.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Slovenia.html&#34; style=&#34;     &#34;&gt;Slovenia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/si.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Solomon%20Islands.html&#34; style=&#34;     &#34;&gt;Solomon Islands&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sb.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Somalia.html&#34; style=&#34;     &#34;&gt;Somalia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/so.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/South%20Africa.html&#34; style=&#34;     &#34;&gt;South Africa&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/za.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/South%20Korea.html&#34; style=&#34;     &#34;&gt;South Korea&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/kr.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/South%20Sudan.html&#34; style=&#34;     &#34;&gt;South Sudan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ss.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Spain.html&#34; style=&#34;     &#34;&gt;Spain&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/es.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Sri%20Lanka.html&#34; style=&#34;     &#34;&gt;Sri Lanka&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/lk.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/St.%20Kitts%20and%20Nevis.html&#34; style=&#34;     &#34;&gt;St. Kitts and Nevis&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/kn.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/St.%20Lucia.html&#34; style=&#34;     &#34;&gt;St. Lucia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/lc.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/St.%20Vincent%20and%20the%20Grenadines.html&#34; style=&#34;     &#34;&gt;St. Vincent and the Grenadines&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/vc.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Sudan.html&#34; style=&#34;     &#34;&gt;Sudan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sd.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Suriname.html&#34; style=&#34;     &#34;&gt;Suriname&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sr.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Sweden.html&#34; style=&#34;     &#34;&gt;Sweden&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/se.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Switzerland.html&#34; style=&#34;     &#34;&gt;Switzerland&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ch.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Syria.html&#34; style=&#34;     &#34;&gt;Syria&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/sy.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Taiwan.html&#34; style=&#34;     &#34;&gt;Taiwan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/tw.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Tajikistan.html&#34; style=&#34;     &#34;&gt;Tajikistan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/tj.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Tanzania.html&#34; style=&#34;     &#34;&gt;Tanzania&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/tz.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Thailand.html&#34; style=&#34;     &#34;&gt;Thailand&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/th.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/The%20Gambia.html&#34; style=&#34;     &#34;&gt;The Gambia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/gm.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Timor-Leste.html&#34; style=&#34;     &#34;&gt;Timor-Leste&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/tl.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Togo.html&#34; style=&#34;     &#34;&gt;Togo&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/tg.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Tonga.html&#34; style=&#34;     &#34;&gt;Tonga&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/to.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Trinidad%20and%20Tobago.html&#34; style=&#34;     &#34;&gt;Trinidad and Tobago&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/tt.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Tunisia.html&#34; style=&#34;     &#34;&gt;Tunisia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/tn.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Turkey.html&#34; style=&#34;     &#34;&gt;Turkey&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/tr.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Turkmenistan.html&#34; style=&#34;     &#34;&gt;Turkmenistan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/tm.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Tuvalu.html&#34; style=&#34;     &#34;&gt;Tuvalu&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/tv.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Uganda.html&#34; style=&#34;     &#34;&gt;Uganda&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ug.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Ukraine.html&#34; style=&#34;     &#34;&gt;Ukraine&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ua.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/United%20Arab%20Emirates.html&#34; style=&#34;     &#34;&gt;United Arab Emirates&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ae.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/United%20Kingdom.html&#34; style=&#34;     &#34;&gt;United Kingdom&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/gb.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/United%20States.html&#34; style=&#34;     &#34;&gt;United States&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/us.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Uruguay.html&#34; style=&#34;     &#34;&gt;Uruguay&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/uy.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/USSR.html&#34; style=&#34;     &#34;&gt;USSR&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ru.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Uzbekistan.html&#34; style=&#34;     &#34;&gt;Uzbekistan&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/uz.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Vanuatu.html&#34; style=&#34;     &#34;&gt;Vanuatu&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/vu.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Venezuela.html&#34; style=&#34;     &#34;&gt;Venezuela&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ve.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Vietnam,%20N..html&#34; style=&#34;     &#34;&gt;Vietnam&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/vn.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Vietnam,%20S..html&#34; style=&#34;     &#34;&gt;Vietnam, N.&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/vn.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Vietnam.html&#34; style=&#34;     &#34;&gt;Vietnam, S.&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/vn.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Yemen,%20N..html&#34; style=&#34;     &#34;&gt;Yemen&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ye.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Yemen,%20S..html&#34; style=&#34;     &#34;&gt;Yemen, N.&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ye.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Yemen.html&#34; style=&#34;     &#34;&gt;Yemen, S.&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/ye.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Yugoslavia.html&#34; style=&#34;     &#34;&gt;Yugoslavia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/NA.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Zambia.html&#34; style=&#34;     &#34;&gt;Zambia&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/zm.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;a href=&#34;files/reports/Zimbabwe.html&#34; style=&#34;     &#34;&gt;Zimbabwe&lt;/a&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+&lt;img src=&#34;https://flagcdn.com/w80/zw.png&#34; /&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Presentation Ninja</title>
+      <link>https://davidicrabtree.com/slides/messinaround/realism/</link>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/slides/messinaround/realism/</guid>
+      <description>
+&lt;script src=&#34;https://davidicrabtree.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://davidicrabtree.com/rmarkdown-libs/datatables-css/datatables-crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://davidicrabtree.com/rmarkdown-libs/datatables-binding/datatables.js&#34;&gt;&lt;/script&gt;
+&lt;script src=&#34;https://davidicrabtree.com/rmarkdown-libs/jquery/jquery-3.6.0.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://davidicrabtree.com/rmarkdown-libs/dt-core/css/jquery.dataTables.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;link href=&#34;https://davidicrabtree.com/rmarkdown-libs/dt-core/css/jquery.dataTables.extra.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://davidicrabtree.com/rmarkdown-libs/dt-core/js/jquery.dataTables.min.js&#34;&gt;&lt;/script&gt;
+&lt;link href=&#34;https://davidicrabtree.com/rmarkdown-libs/crosstalk/css/crosstalk.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;https://davidicrabtree.com/rmarkdown-libs/crosstalk/js/crosstalk.min.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;typography&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Typography&lt;/h2&gt;
+&lt;p&gt;Text can be &lt;strong&gt;bold&lt;/strong&gt;, &lt;em&gt;italic&lt;/em&gt;, &lt;del&gt;strikethrough&lt;/del&gt;, or &lt;code&gt;inline code&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;#colors&#34;&gt;Link to another slide&lt;/a&gt;.&lt;/p&gt;
+&lt;div id=&#34;lorem-ipsum&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Lorem Ipsum&lt;/h3&gt;
+&lt;p&gt;Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor.
+Lacinia neque mollis nascetur neque urna velit bibendum.
+Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Dolor cubilia nostra nunc sodales&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Consectetur aliquet mauris blandit&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Ipsum dis nec porttitor urna sed&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table style=&#34;width:6%;&#34;&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;5%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;name: colors&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;## Colors&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;.left-column[
+Text color&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;a href=&#34;#3&#34;&gt;Link Color&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;strong&gt;Bold Color&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;em&gt;Italic Color&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;Inline Code&lt;/code&gt;
+]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;.right-column[
+Lorem ipsum dolor sit amet, &lt;a href=&#34;#3&#34;&gt;consectetur adipiscing elit (link)&lt;/a&gt;,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Erat nam at lectus urna.
+Pellentesque elit ullamcorper &lt;strong&gt;dignissim cras tincidunt (bold)&lt;/strong&gt; lobortis feugiat.
+&lt;em&gt;Eros donec ac odio tempor&lt;/em&gt; orci dapibus ultrices.
+Id porta nibh venenatis cras sed felis eget velit aliquet.
+Aliquam id diam maecenas ultricies mi.
+Enim sit amet
+&lt;code&gt;code_color(&#34;inline&#34;)&lt;/code&gt;
+venenatis urna cursus eget nunc scelerisque viverra.]&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;big-topic-or-inverse-slides&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Big Topic or Inverse Slides &lt;code&gt;#&lt;/code&gt;&lt;/h1&gt;
+&lt;div id=&#34;slide-headings&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Slide Headings &lt;code&gt;##&lt;/code&gt;&lt;/h2&gt;
+&lt;div id=&#34;sub-slide-headings&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Sub-slide Headings &lt;code&gt;###&lt;/code&gt;&lt;/h3&gt;
+&lt;div id=&#34;bold-call-out&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Bold Call-Out &lt;code&gt;####&lt;/code&gt;&lt;/h4&gt;
+&lt;p&gt;This is a normal paragraph text. Only use header levels 1-4.&lt;/p&gt;
+&lt;div id=&#34;possible-but-not-recommended&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Possible, but not recommended &lt;code&gt;#####&lt;/code&gt;&lt;/h5&gt;
+&lt;div id=&#34;definitely-dont-use-h6&#34; class=&#34;section level6&#34;&gt;
+&lt;h6&gt;Definitely don’t use h6 &lt;code&gt;######&lt;/code&gt;&lt;/h6&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;left-column-headings&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Left-Column Headings&lt;/h1&gt;
+&lt;p&gt;.left-column[
+## First&lt;/p&gt;
+&lt;div id=&#34;second&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Second&lt;/h2&gt;
+&lt;/div&gt;
+&lt;div id=&#34;third&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Third&lt;/h2&gt;
+&lt;p&gt;]&lt;/p&gt;
+&lt;p&gt;.right-column[
+Dolor quis aptent mus a dictum ultricies egestas.&lt;/p&gt;
+&lt;p&gt;Amet egestas neque tempor fermentum proin massa!&lt;/p&gt;
+&lt;p&gt;Dolor elementum fermentum pharetra lectus arcu pulvinar.
+]&lt;/p&gt;
+&lt;table style=&#34;width:6%;&#34;&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;5%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;class: inverse center middle&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;# Topic Changing Interstitial&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;pre&gt;&lt;code&gt;class: inverse center middle&lt;/code&gt;&lt;/pre&gt;
+&lt;div id=&#34;blockquote&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Blockquote&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote following a header.&lt;/p&gt;
+&lt;p&gt;When something is important enough, you do it even if the odds are not in your favor.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;code-blocks&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Code Blocks&lt;/h3&gt;
+&lt;div id=&#34;r-code&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;R Code&lt;/h4&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ggplot(gapminder) +
+  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
+  geom_point() +
+  facet_wrap(~year)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;javascript&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;JavaScript&lt;/h4&gt;
+&lt;pre class=&#34;js&#34;&gt;&lt;code&gt;var fun = function lang(l) {
+  dateformat.i18n = require(&amp;#39;./lang/&amp;#39; + l)
+  return true;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;more-r-code&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;More R Code&lt;/h3&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;dplyr::starwars %&amp;gt;% dplyr::slice_sample(n = 4)&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;cli::cli_alert_success(&amp;quot;It worked!&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## v It worked!&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;–&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;message(&amp;quot;Just a friendly message&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Just a friendly message&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;–&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;warning(&amp;quot;This could be bad...&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Warning: This could be bad...&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;–&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;stop(&amp;quot;I hope you&amp;#39;re sitting down for this&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## Error in eval(expr, envir, enclos): I hope you&amp;#39;re sitting down for this&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;exclude: false&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tibble::as_tibble(mtcars)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 32 x 11
+##      mpg   cyl  disp    hp  drat    wt  qsec    vs    am  gear  carb
+##    &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt; &amp;lt;dbl&amp;gt;
+##  1  21       6  160    110  3.9   2.62  16.5     0     1     4     4
+##  2  21       6  160    110  3.9   2.88  17.0     0     1     4     4
+##  3  22.8     4  108     93  3.85  2.32  18.6     1     1     4     1
+##  4  21.4     6  258    110  3.08  3.22  19.4     1     0     3     1
+##  5  18.7     8  360    175  3.15  3.44  17.0     0     0     3     2
+##  6  18.1     6  225    105  2.76  3.46  20.2     1     0     3     1
+##  7  14.3     8  360    245  3.21  3.57  15.8     0     0     3     4
+##  8  24.4     4  147.    62  3.69  3.19  20       1     0     4     2
+##  9  22.8     4  141.    95  3.92  3.15  22.9     1     0     4     2
+## 10  19.2     6  168.   123  3.92  3.44  18.3     1     0     4     4
+## # ... with 22 more rows&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;knitr::kable(head(mtcars), format = &amp;#39;html&amp;#39;)&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left;&#34;&gt;
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+mpg
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+cyl
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+disp
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+hp
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+drat
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+wt
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+qsec
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+vs
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+am
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+gear
+&lt;/th&gt;
+&lt;th style=&#34;text-align:right;&#34;&gt;
+carb
+&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mazda RX4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+21.0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+6
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+160
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+110
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.90
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.620
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+16.46
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Mazda RX4 Wag
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+21.0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+6
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+160
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+110
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.90
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.875
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+17.02
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Datsun 710
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+22.8
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+108
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+93
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.85
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.320
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+18.61
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Hornet 4 Drive
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+21.4
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+6
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+258
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+110
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.08
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.215
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+19.44
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Hornet Sportabout
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+18.7
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+8
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+360
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+175
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.15
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.440
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+17.02
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left;&#34;&gt;
+Valiant
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+18.1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+6
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+225
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+105
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+2.76
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3.460
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+20.22
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+0
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+3
+&lt;/td&gt;
+&lt;td style=&#34;text-align:right;&#34;&gt;
+1
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;table style=&#34;width:6%;&#34;&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;5%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;exclude: false&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td&gt;&lt;code&gt;r DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td&gt;&lt;code&gt;{=html} &amp;lt;div id=&#34;htmlwidget-1&#34; style=&#34;width:100%;height:auto;&#34; class=&#34;datatables html-widget&#34;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;script type=&#34;application/json&#34; data-for=&#34;htmlwidget-1&#34;&amp;gt;{&#34;x&#34;:{&#34;filter&#34;:&#34;none&#34;,&#34;vertical&#34;:false,&#34;fillContainer&#34;:false,&#34;data&#34;:[[&#34;Mazda RX4&#34;,&#34;Mazda RX4 Wag&#34;,&#34;Datsun 710&#34;,&#34;Hornet 4 Drive&#34;,&#34;Hornet Sportabout&#34;,&#34;Valiant&#34;],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],&#34;container&#34;:&#34;&amp;lt;table class=\&#34;display\&#34;&amp;gt;\n  &amp;lt;thead&amp;gt;\n    &amp;lt;tr&amp;gt;\n      &amp;lt;th&amp;gt; &amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;mpg&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;cyl&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;disp&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;hp&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;drat&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;wt&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;qsec&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;vs&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;am&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;gear&amp;lt;\/th&amp;gt;\n      &amp;lt;th&amp;gt;carb&amp;lt;\/th&amp;gt;\n    &amp;lt;\/tr&amp;gt;\n  &amp;lt;\/thead&amp;gt;\n&amp;lt;\/table&amp;gt;&#34;,&#34;options&#34;:{&#34;pageLength&#34;:4,&#34;columnDefs&#34;:[{&#34;className&#34;:&#34;dt-right&#34;,&#34;targets&#34;:[1,2,3,4,5,6,7,8,9,10,11]},{&#34;orderable&#34;:false,&#34;targets&#34;:0}],&#34;order&#34;:[],&#34;autoWidth&#34;:false,&#34;orderClasses&#34;:false,&#34;lengthMenu&#34;:[4,10,25,50,100]}},&#34;evals&#34;:[],&#34;jsHooks&#34;:[]}&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;layout: true&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;lists&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Lists&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;.pull-left[
+#### Here is an unordered list:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Item foo&lt;/li&gt;
+&lt;li&gt;Item bar&lt;/li&gt;
+&lt;li&gt;Item baz&lt;/li&gt;
+&lt;li&gt;Item zip
+]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;.pull-right[&lt;/p&gt;
+&lt;div id=&#34;and-an-ordered-list&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;And an ordered list:&lt;/h4&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Item one&lt;/li&gt;
+&lt;li&gt;Item two&lt;/li&gt;
+&lt;li&gt;Item three&lt;/li&gt;
+&lt;li&gt;Item four
+]&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;and-a-nested-list&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;And a nested list:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;level 1 item
+&lt;ul&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;li&gt;level 2 item
+&lt;ul&gt;
+&lt;li&gt;level 3 item&lt;/li&gt;
+&lt;li&gt;level 3 item&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;level 1 item
+&lt;ul&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;level 1 item
+&lt;ul&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;li&gt;level 2 item&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;level 1 item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;div id=&#34;nesting-an-ol-in-ul-in-an-ol&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Nesting an ol in ul in an ol&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;level 1 item (ul)
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;level 2 item (ol)&lt;/li&gt;
+&lt;li&gt;level 2 item (ol)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;level 1 item (ul)
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;level 2 item (ol)&lt;/li&gt;
+&lt;li&gt;level 2 item (ol)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;level 4 item (ol)&lt;/li&gt;
+&lt;li&gt;level 4 item (ol)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;li&gt;level 3 item (ul)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;level 1 item (ul)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(ggplot2)
+(g &amp;lt;- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;https://davidicrabtree.com/slides/messinAround/realism_files/figure-html/plot-example-1.png&#34; width=&#34;100%&#34; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
+  ggtitle(&amp;quot;A Plot About Cars&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;.footnote[Requires &lt;code&gt;{showtext}&lt;/code&gt;]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;layout: false&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;square-image&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Square image&lt;/h2&gt;
+&lt;center&gt;
+&lt;img src=&#34;https://octodex.github.com/images/labtocat.png&#34; alt=&#34;GithHub Octocat&#34; height=&#34;400px&#34; /&gt;
+&lt;/center&gt;
+&lt;p&gt;.footnote[GitHub Octocat]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;wide-image&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Wide image&lt;/h3&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;https://docs.github.com/assets/images/help/repository/branching.png&#34; alt=&#34;&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;A wide image with a diagram of branching in git.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;.footnote[Wide images scale to 100% slide width]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-images&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Two images&lt;/h2&gt;
+&lt;p&gt;.pull-left[
+&lt;img src=&#34;https://octodex.github.com/images/motherhubbertocat.png&#34; alt=&#34;A GitHub Octocat, style “mother hubber”&#34; /&gt;]&lt;/p&gt;
+&lt;p&gt;.pull-right[
+&lt;img src=&#34;https://octodex.github.com/images/dinotocat.png&#34; alt=&#34;A GitHub Octocat, style “dinotcat”&#34; /&gt;]&lt;/p&gt;
+&lt;hr /&gt;
+&lt;div id=&#34;definition-lists-can-be-used-with-html-syntax.&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Definition lists can be used with HTML syntax.&lt;/h3&gt;
+&lt;dl&gt;
+&lt;dt&gt;
+Name
+&lt;/dt&gt;
+&lt;dd&gt;
+Godzilla
+&lt;/dd&gt;
+&lt;dt&gt;
+Born
+&lt;/dt&gt;
+&lt;dd&gt;
+1952
+&lt;/dd&gt;
+&lt;dt&gt;
+Birthplace
+&lt;/dt&gt;
+&lt;dd&gt;
+Japan
+&lt;/dd&gt;
+&lt;dt&gt;
+Color
+&lt;/dt&gt;
+&lt;dd&gt;
+Green
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;hr /&gt;
+&lt;p&gt;class: center, middle&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;thanks&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Thanks!&lt;/h1&gt;
+&lt;p&gt;Slides created via the R packages:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/yihui/xaringan&#34;&gt;&lt;strong&gt;xaringan&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/gadenbuie/xaringanthemer&#34;&gt;gadenbuie/xaringanthemer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The chakra comes from &lt;a href=&#34;https://remarkjs.com&#34;&gt;remark.js&lt;/a&gt;, &lt;a href=&#34;http://yihui.name/knitr&#34;&gt;&lt;strong&gt;knitr&lt;/strong&gt;&lt;/a&gt;, and &lt;a href=&#34;https://rmarkdown.rstudio.com&#34;&gt;R Markdown&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Realism</title>
+      <link>https://davidicrabtree.com/slides/realism/</link>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/slides/realism/</guid>
+      <description>&lt;h1 id=&#34;realism&#34;&gt;Realism&lt;/h1&gt;
+&lt;p&gt;An International Relations Theory&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;when-do-states-go-to-war&#34;&gt;When do states go to war?&lt;/h2&gt;
+&lt;span style=&#34;font-size: 35px&#34;&gt;  
+What common themes did you notice in the Melian Dialogue and the Munich Conference? 
+&lt;br&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Why do you think Athens decided to invade Melos?
+&lt;/span&gt;
+&lt;br&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Why do you think Hitler invaded Czechoslovakia after agreeing not to?
+&lt;/span&gt;
+&lt;br&gt; 
+&lt;span class=&#34;fragment &#34; &gt;
+  Realism offers answers to these questions. It is one framework for predicting when states will go to war, and it explains why states are so inherently aggressive.
+&lt;/span&gt;  
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;five-core-assumptions-of-realism&#34;&gt;Five Core Assumptions of Realism&lt;/h2&gt;
+&lt;h5 id=&#34;according-to-john-mearsheimer&#34;&gt;According to John Mearsheimer&lt;/h5&gt;
+&lt;span style=&#34;font-size: 35px&#34;&gt;  
+&lt;ol&gt;
+&lt;li&gt;The international system is anarchic&lt;/li&gt;
+&lt;li&gt;States possess some inherent military capability&lt;/li&gt;
+&lt;li&gt;One state can&amp;rsquo;t know another state&amp;rsquo;s intentions&lt;/li&gt;
+&lt;li&gt;The primary goal of states is survival&lt;/li&gt;
+&lt;li&gt;States are rational actors&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;assumption-1-anarchy&#34;&gt;Assumption 1: Anarchy&lt;/h3&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt;  
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Anarchy refers to the structure of the international system&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;When IR scholars refer to &amp;ldquo;anarchy,&amp;rdquo; they do not mean chaos or disorder&lt;/li&gt;
+&lt;li&gt;States have &lt;em&gt;no higher authority to appeal to during crisis.&lt;/em&gt; No government over governments&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;911 Scenario&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Anarchy creates incentive for distrust and self-help&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;God helps states that help themselves.&amp;rdquo; - John Mearsheimer
+&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;assumption-2-offensive-military-capabilities&#34;&gt;Assumption 2: Offensive Military Capabilities&lt;/h3&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt;  
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;All states possess &lt;em&gt;some&lt;/em&gt; military capability&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Thus, by virtue of existing, a state in the international system poses a threat to other states via its military.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Because of this, fear is a characteristic of life in the international system. States do and should fear the capabilities of other states, according to realists.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;To do otherwise is naive.&lt;/li&gt;
+&lt;li&gt;Today&amp;rsquo;s allies are tomorrow&amp;rsquo;s enemies, and vice-versa.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;assumption-3-unknown-intentions&#34;&gt;Assumption 3: Unknown Intentions&lt;/h3&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt;   
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A state can never be sure that another state will not use its military offensively.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Specifically highlights the uncertain nature of alliances&lt;/li&gt;
+&lt;li&gt;Consider Sparta in the Melian Dialogue: Why did they not help their ally, the Melians?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Does not necessarily mean all states are aggressive - the point is, it&amp;rsquo;s impossible to &lt;em&gt;know.&lt;/em&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Essentially, assumption 2 is all states have aggressive &lt;em&gt;capacity&lt;/em&gt;, and assumption 3 pertains to the unknowability of aggressive &lt;em&gt;intention&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Result: States should prepare for the worst.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;assumption-4-survival-is-the-primary-goal-of-states&#34;&gt;Assumption 4: Survival is the Primary Goal of States&lt;/h3&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt; 
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;The emphasis here is that - before &lt;em&gt;ANYTHING&lt;/em&gt; else - states are concerned about survival.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Implications: Tertiary motives like ideology, alliances, trade, international commitments, etc. are only important &lt;em&gt;after&lt;/em&gt; a state&amp;rsquo;s survival is secured. Survival is &lt;em&gt;always&lt;/em&gt; first.&lt;/li&gt;
+&lt;li&gt;Consider Maslow&amp;rsquo;s Hierarchy of Needs, applied to states.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Joseph Stalin: &amp;ldquo;We can and must build socialism. But in order to do so we first of all ahve to exist.&amp;rdquo;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;assumption-5-states-are-rational-actors&#34;&gt;Assumption 5: States are Rational Actors&lt;/h2&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt; 
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Emphasis here is that states are &lt;em&gt;aware&lt;/em&gt; of both the implications of their own actions &lt;em&gt;and&lt;/em&gt; (more to the point) the implications of other states&amp;rsquo; actions and preferences.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Example: If a state builds up its military, other states may grow nervous due to the implications for their own security.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;three-predictions-from-realist-assumptions&#34;&gt;Three Predictions from Realist Assumptions&lt;/h3&gt;
+&lt;span style=&#34;font-size: 25px&#34;&gt; 
+&lt;ol&gt;
+&lt;li&gt;Fear&lt;/li&gt;
+&lt;li&gt;Self-Help&lt;/li&gt;
+&lt;li&gt;Power Maximization&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/span&gt;</description>
+    </item>
+    
+    <item>
+      <title>Realism</title>
+      <link>https://davidicrabtree.com/tutoring/realism/</link>
+      <pubDate>Mon, 04 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/tutoring/realism/</guid>
+      <description>&lt;p&gt;Why do states go to war? When should we expect conflict? Does the international system allow for states to peacefully co-exist?&lt;/p&gt;
+&lt;p&gt;In this lecture, we explore the theoretical perspective of realism and its answers to these questions.&lt;/p&gt;
+&lt;p&gt;Recommended Readings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Chapter 2 from &lt;em&gt;The Tragedy of Great Power Politics&lt;/em&gt;, by John Mearsheimer&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;The Melian Dialogue&lt;/em&gt;, from &lt;em&gt;The Pelopponesian War&lt;/em&gt;, by Thucydides&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Arrival: A Case for Constructivism</title>
+      <link>https://davidicrabtree.com/blog/arrival/</link>
+      <pubDate>Sun, 20 Feb 2022 21:13:14 -0500</pubDate>
+      <guid>https://davidicrabtree.com/blog/arrival/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;img src=&#34;images/Alien-Arrival-Amy-Adams.webp&#34; style=&#34;width:100.0%&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Released to critical acclaim in 2016, &lt;em&gt;Arrival&lt;/em&gt; is a science fiction film that highlights the perspective of linguistics professor Dr. Louise Banks (Amy Adams), who has the unenviable duty of communicating with foreign visitors to Earth and simultaneously preventing war between its suspicious nation-states. In this quest, she works alongside theoretical physicist and future husband Ian Donnelly (Jeremy Renner) after they are recruited by Colonel Weber (Forest Whitaker) of the U.S. military.&lt;/p&gt;
+&lt;p&gt;The film’s metaphors range in their explicitness from subtle to very direct, and as such the movie has spawned no short list of critical reviews (including this one) which are eager to expand upon ideas that director Denis Villeneuve weaved seamlessly together into a single 116 minute narrative. While most of the film’s underlying meaning pushes audiences to consider the transience of life and the power of language, the movie also has clear political metaphors, and it offers a message to realist theorists of international relations: you assume too much.&lt;/p&gt;
+&lt;p&gt;When the aliens first arrive, we are shown the breakdown of human society: protests in the streets of Washington, violence in the capital of Venezuela, and public schools and universities rendered vacant. The media is hyper-fixated on the reticent government response, and the government for its part remains tight-lipped in its interactions with the public. When Louise is recruited by the U.S. Army, she is told very directly that her (and the government’s) top priority is to figure out who these aliens are and what they want.&lt;/p&gt;
+&lt;div id=&#34;image-here&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Image Here&lt;/h2&gt;
+&lt;p&gt;At first glance, this response may seem entirely rational given what we do know about these potential invaders: the aliens look like octopi-meets tree root-meets gigantic human hand, they sound like whales, and they fly around in massive metal bean-pods. What could be more terrifying? Perhaps, as some of the extremist media commentators in the film suggested, the U.S. government should act first to secure its citizens safety and ask questions later.&lt;/p&gt;
+&lt;p&gt;But this line of thinking is seriously flawed, and more than that - it poignantly represents the dangers of humanity’s tendency for xenophobia, suspicion, and fear in light of the unknown intentions of foreign actors. Realists argue that this suspicion in the international arena is not only justified but necessary, because they assume humans (and thereby states, which are a human social construction) are, above all else, concerned with survival, relative gains in power, and the uncertainty of an anarchic international system. This line of thinking appears to have been persuasive to the top U.S. decision-makers in the film, who decide to cut all communications with other nations once they learn the aliens want to “offer” humanity a “weapon.”&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;image-here-1&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Image Here&lt;/h2&gt;
+&lt;p&gt;By this point in the film, the plot has really picked up pace, and I did not really think much about this decision the first time I watched it. Of course - the U.S. should be fearful and suspicious if a technologically advanced race of aliens wants to bring a weapon to Earth, a planet with no single political leader and an international system based on anarchy. It would be foolhardy to risk talking to other suspicious, self-interested states, them figuring out about this weapon, and everyone potentially triggering a war over who gets to control it. Right?&lt;/p&gt;
+&lt;p&gt;. . . Not really. As Alexander Wendt describes in his &lt;a href=&#34;https://www.mtholyoke.edu/acad/intrel/pol116/wendt.htm&#34;&gt;aptly named 1992 article&lt;/a&gt;, “Anarchy is what States Make of it,” anarchy is not a structural characteristic of an unchangeable international landscape. Rather, it is a function of human interaction, socially contrived assumptions, and agreed-upon patterns of acceptable behavior. At the end of his article, Wendt describes how our interactions with a hypothetical alien civilization would be determined by a process of signaling, interpreting, and responding until we had constructed an identity for the aliens based on patterns of perceived behavior.&lt;/p&gt;
+&lt;p&gt;This is exactly what happens in the first half of &lt;em&gt;Arrival&lt;/em&gt;, with every nation (including trigger-happy China) at least making some effort to understand the aliens’ intentions and communicate with each other before acting aggressively to secure their own survival. This example clearly illustrates the socially constructed nature of anarchy: put in an extreme situation with unknown actors, states opened communications channels with both each other and the potential invaders in order to determine their intentions and reduce uncertainty.&lt;/p&gt;
+&lt;p&gt;Importantly, this interpretation in the beginning of the film did not &lt;em&gt;ignore&lt;/em&gt; humanity’s predisposition towards fear - it &lt;em&gt;embraced&lt;/em&gt; it. By the second half of the movie, after the aliens indicate that their purpose is to “offer weapon,” humanity’s defining traits and cynical assumptions start to show through. As prospects grow increasingly dim for peace, the contrast between the constructivist mindset and the realist mindset can best be seen through Louise’s interactions with U.S. military officers. While the colonel and CIA agent Halpern give orders to prepare for retaliation after some rogue soldiers set off a bomb in the aliens’ pod, Louise advocates for more - not less - communication and transparency with the unknown entities. After perceiving that the aliens want to ‘offer’ a ‘weapon,’ Louise - well aware of how easy it may be to misinterpret an unknown language and sensitive to the political effects of such an error - advocates for communication with other nations in exchange for any information they may have, in order to paint a fuller picture and reduce uncertainty. Unfortunately, the army decides to follow the course of action dictated by realist assumptions of relative gains, and it cuts communication with ally nations.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;two-images-here&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Two images here&lt;/h2&gt;
+&lt;p&gt;The film hints at several examples of why precisely that the U.S. made the wrong choice. For instance, China interpreted what was likely the same communication by the aliens as “use weapon” instead of “offer weapon,” an implication that Louise was right about how easy misinterpretation can be. Moreover, once Louise learns to fully understand the alien language, she perceives Costello saying “offer &lt;em&gt;gift&lt;/em&gt;” - because of course, the alien language was never a weapon in the first place, but rather a gift to us. Simple misperceptions and miscalculations nearly led to world war in &lt;em&gt;Arrival&lt;/em&gt;, not because such conflict was endemic to the anarchic system, but because &lt;em&gt;humanity failed to listen&lt;/em&gt;. By being conscious of our own logical pitfalls and fearful predispositions - like Louise was - we can avoid unnecessary conflict with non-aggressive actors. This is the moral of &lt;em&gt;Arrival&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;So what exactly was the aliens’ “gift” to humanity, and what is this film trying to tell us about international relations? These two questions are, unironically, inseparable. At the most basic level, the Heptapods’ gift to humanity was their language - woohoo, we get to read circular ink symbols. But, of course, the movie illustrates how the gift was so much more than that. In keeping with its thematic focus on the power of language, once Louise learns the foreign language, she also learns how to ‘think’ like a Heptapod, and this unlocks a whole new perspective on reality. It seems arguable that part of this perspective includes a preference for peaceful discussion and a reluctance to assume threatening behavior in uncertain situations. After-all, even after humans set off an explosion in the alien ship and &lt;em&gt;killed&lt;/em&gt; a member of their species, they did not retaliate and instead proceeded to give Louise their prized gift. Furthermore, in one of Louise’s “flashbacks to the future,” she appears to be at a United Nations conference, and a large flag with a Heptapod symbol can be seen beside the smaller flags of several states: a clear reference to greater unity in the aftermath of the aliens’ arrival.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;image-here-2&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Image here&lt;/h2&gt;
+&lt;p&gt;The Heptapods’ gift to humanity was Louise’s realization that anarchy can not only be mitigated - it itself is &lt;em&gt;constructed&lt;/em&gt;. Just like she and Donnelly argue in the room of decision-makers, the fact that aliens are also conversing or trading with other states is &lt;em&gt;not&lt;/em&gt; inherently a zero-sum game: we do not &lt;em&gt;know&lt;/em&gt; what the aliens want or what they are trading, and relying on assumptions of self-interest and relative power ignores the fact that our very relationship with groups different than us is &lt;em&gt;constructed&lt;/em&gt;. To the extent this conclusion is true, it highlights the importance of cognizant communication which remains aware of humanity’s biases towards fear, suspicion and distrust predicated on the idea that we can logically assume the worst in uncertain situations.&lt;/p&gt;
+&lt;p&gt;Oh, and before the keen realist critic objects that it is totally unrealistic for a movie to portray such peaceful aliens: you have completely missed the point. Our ideas of what a “rational” motive is for aliens is - itself - &lt;em&gt;constructed&lt;/em&gt;. It is based on our intersubjective understanding of reality. Because we humans are all too often distrustful, fearful, and prone to assume the worst, we might &lt;em&gt;assume&lt;/em&gt; that must be rational behavior for aliens too. Abbot’s sacrifice to save Louise and Ian is a subtle reference to how this can be a faulty assumption, and I did not even recognize it the first two times I watched the film because of how ingrained this anthropogenic mode of thinking is.&lt;/p&gt;
+&lt;p&gt;If aliens were to land on Earth, and perhaps even if they don’t, we should remember that our assumptions based in distrust and fear will only get us so far.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://davidicrabtree.com/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/slides/example/</guid>
+      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://revealjs.com/pdf-export/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;porridge&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;blueberry&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Eating...&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  One
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  &lt;strong&gt;Two&lt;/strong&gt;
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+  Three
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{% speaker_note %}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Only the speaker can read these notes
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;-&lt;/span&gt; Press &lt;span class=&#34;sb&#34;&gt;`S`&lt;/span&gt; key to view
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  {{% /speaker_note %}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/media/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-image&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;/media/boards.jpg&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;background-color&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;#0000FF&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{{&lt;span class=&#34;p&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;slide&lt;/span&gt; &lt;span class=&#34;na&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#34;my-style&amp;#34;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;&amp;gt;&lt;/span&gt;}}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h2&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nc&#34;&gt;reveal&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;section&lt;/span&gt; &lt;span class=&#34;nt&#34;&gt;h3&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;k&#34;&gt;color&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;navy&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://davidicrabtree.com/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://davidicrabtree.com/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
