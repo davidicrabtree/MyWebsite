@@ -20,9 +20,15 @@ interests:
 - Statistical computing in R
 - Quantitative methods
 organizations:
-- name: University of Chicago
+- name: Instructional Assistant
+  url: 
+- name: Dept. of Political Science, UChicago
   url: https://political-science.uchicago.edu/directory/david-crabtree
-role: Graduate Political Science Student
+- name: Data Manager
+  url: 
+- name: "American Bar Foundation"
+  url: https://www.americanbarfoundation.org/people/david-crabtree/
+role: ''
 social:
 - icon: envelope
   icon_pack: fas
@@ -37,9 +43,13 @@ superuser: true
 title: David I. Crabtree
 ---
 
-I am an Instructional Assistant in the Department of Political Science at the University of Chicago, where I received my MA in 2023. I am interested in the temporal sequence of democratic backsliding, quantitative methods, and the politics of presidential term limits. My thesis examined which democratic institutions were frequently undermined early and late in declining democracies with term limits. Merging a new dataset of term limit evaders with existing indicators of democratic decline, it considers how term limits, by constraining executive tenure, might incentivize would-be autocrats to dismantle some democratic institutions before others. An ongoing project studies the effectiveness of unamendable term limit provisions.  
+I am an Instructional Assistant in the Department of Political Science at the University of Chicago. I advise undergraduate honors students on their thesis research and provide academic support to students in a variety of courses in the political science department. 
 
-I am dedicated to the open source framework, and most of my projects can be found on my {{< icon name="github" pack="fab" >}}[Github](https://github.com/davidicrabtree).  
+I am a data manager for Professor Tom Ginsburg's *Legal Characteristics of International Organizations* project at the American Bar Foundation. The project, funded by the National Science Foundation, systematically collects  charters for international organizations and records how their legal characteristics and country membership change over time. I manage a team of RAs, clean incoming data, and prepare weekly reports on the project's progress.
+
+I received an MA from UChicago in 2023. I am interested in the temporal sequence of democratic backsliding, quantitative methods, and the role of legal institutions like term limits in constraining autocratization. My thesis examined which democratic institutions were frequently undermined early and late in declining presidential democracies with term limits. Merging a new dataset of term limit evaders with existing indicators of democratic decline, my thesis considered how term limits, by placing a ticking clock on time in office, might incentivize would-be autocrats to dismantle some democratic institutions before others. An ongoing project theorizes the effectiveness of unamendability as a  protection for term limit provisions.
+
+Before UChicago, I studied the role of the COVID-19 pandemic on American perceptions of welfare using survey experiments. 
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "/authors/admin/CrabtreeCV.pdf" "newtab" >}}CV{{< /staticref >}}.
