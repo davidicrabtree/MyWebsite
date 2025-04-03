@@ -46,9 +46,11 @@ I am an Instructional Assistant in the Department of Political Science at the Un
 
 Concurrently, I manage Professor Tom Ginsburg's *Legal Characteristics of International Organizations* project at the American Bar Foundation. The project, funded by the National Science Foundation, is an effort to collect charters for international organizations and record how their legal characteristics and country membership change over time. I manage a team of RAs, clean incoming data, and provide analytical support. We hope to answer how authoritarian international organizations differ from democratic ones.
 
-I am interested in democratic backsliding in the U.S. and Latin America. My MA thesis suggested backsliding in presidential systems often occurs with early restrictions on freedoms to protest, with these freedoms being less targeted later in spouts of presidential backsliding. I suggest this is because presidents must circumvent term limits to prolong their time in power, and presidents know that efforts to circumvent term limits have often been thwarted by public protest. Knowing this, backsliding presidents undermine freedoms of organization early in their tenure. 
+I am interested in democratic backsliding in the U.S. and Latin America. 
 
-In a separate project, I consider whether Constitutions that designate term limits as unamendable can prevent presidents from overstaying their time in power (under review for publication).
+My MA thesis suggested backsliding in presidential systems often occurs with early restrictions on freedoms to protest, with these freedoms being less targeted later on in spouts of presidential backsliding. I suggest this is because presidents must circumvent term limits to prolong their time in power, and presidents know that efforts to circumvent term limits have often been thwarted by public protest. As a result, backsliding presidents undermine freedoms of organization early in their tenure. 
+
+In a separate project, I consider whether Constitutions that designate term limits as unamendable can prevent presidents from overstaying their time in power (under review).
 
 Before UChicago, I studied how the COVID-19 pandemic affected American perceptions of welfare using survey experiments. 
 
