@@ -14,11 +14,10 @@ education:
 email: "crabtreed@uchicago.edu"
 highlight_name: true
 interests:
-- Chronological order of democratic backsliding
-- Evasion of presidential term limits
-- Democratic erosion in Latin America
-- Statistical computing in R
-- Quantitative methods
+- Institutions Deterring Democratic Backsliding
+- Public Trust in Democratic Institutions
+- Presidential Term Limit Evasion
+- Intl Organizations Entrenching Authoritarianism
 organizations:
 - name: Instructional Assistant
   url: 
@@ -45,11 +44,13 @@ title: David I. Crabtree
 
 I am an Instructional Assistant in the Department of Political Science at the University of Chicago. I advise undergraduate honors students on their thesis research and provide academic support to students in a variety of courses in the political science department. 
 
-I am a data manager for Professor Tom Ginsburg's *Legal Characteristics of International Organizations* project at the American Bar Foundation. The project, funded by the National Science Foundation, systematically collects  charters for international organizations and records how their legal characteristics and country membership change over time. I manage a team of RAs, clean incoming data, and prepare weekly reports on the project's progress.
+Concurrently, I manage Professor Tom Ginsburg's *Legal Characteristics of International Organizations* project at the American Bar Foundation. The project, funded by the National Science Foundation, is an effort to collect charters for international organizations and record how their legal characteristics and country membership change over time. I manage a team of RAs, clean incoming data, and provide analytical support. We hope to answer how authoritarian international organizations differ from democratic ones.
 
-I am interested in the temporal sequence of democratic backsliding, the role of legal institutions like term limits in constraining autocratization, and data analysis in R. My thesis examined which democratic institutions were frequently undermined early and late in declining presidential democracies with term limits. Merging a new dataset of term limit evaders with existing indicators of democratic decline, my thesis considered how term limits, by placing a ticking clock on time in office, might incentivize would-be autocrats to dismantle some democratic institutions before others. An ongoing project theorizes the effectiveness of unamendability as a  protection for term limit provisions.
+I am interested in democratic backsliding in the U.S. and Latin America. My MA thesis suggested backsliding in presidential systems often occurs with early restrictions on freedoms to protest, with these freedoms being less targeted later in spouts of presidential backsliding. I suggest this is because presidents must circumvent term limits to prolong their time in power, and presidents know that efforts to circumvent term limits have often been thwarted by public protest. Knowing this, backsliding presidents undermine freedoms of organization early in their tenure. 
 
-Before UChicago, I studied the role of the COVID-19 pandemic on American perceptions of welfare using survey experiments. 
+In a separate project, I consider whether Constitutions that designate term limits as unamendable can prevent presidents from overstaying their time in power (under review for publication).
+
+Before UChicago, I studied how the COVID-19 pandemic affected American perceptions of welfare using survey experiments. 
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "/authors/admin/CrabtreeCV.pdf" "newtab" >}}CV{{< /staticref >}}.
