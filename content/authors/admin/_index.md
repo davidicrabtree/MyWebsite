@@ -48,7 +48,7 @@ Concurrently, I manage Professor Tom Ginsburg's *Legal Characteristics of Intern
 
 I am interested in democratic backsliding in the U.S. and Latin America. 
 
-My MA thesis suggested backsliding in presidential systems often occurs with early restrictions on freedoms to protest, with these freedoms being less targeted later on in spouts of presidential backsliding. I suggest this is because presidents must circumvent term limits to prolong their time in power, and presidents know that efforts to circumvent term limits have often been thwarted by public protest. As a result, backsliding presidents undermine freedoms of organization early in their tenure. 
+My MA thesis suggested backsliding in presidential systems often occurs with early restrictions on freedoms to protest, with these freedoms being less targeted later on in spouts of presidential backsliding. I suggest this is because presidents must circumvent term limits to prolong their time in power, and presidents know that efforts to circumvent term limits have often been thwarted by public protest. As a result, backsliding presidents seek to undermine freedoms of association early in their tenure. 
 
 In a separate project, I consider whether Constitutions that designate term limits as unamendable can prevent presidents from overstaying their time in power (under review).
 
