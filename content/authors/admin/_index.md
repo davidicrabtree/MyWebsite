@@ -45,7 +45,7 @@ I am a PhD Student in the Department of Political Science at the University of C
 
 Three projects constitute my research agenda. 
 
-First, my current project, funded by the Malyi Center for Institutional Effectiveness, tracks the history of election denialism in the United States with text-as-data analysis of town hall transcripts and politician speeches. I will explore whether denialist rhetoric originated amongst elites or the mass public and examine how it evolved over time. 
+First, my current project, funded by the Malyi Center for Institutional Effectiveness, tracks the history of election denialism in the United States with text-as-data analysis of town hall transcripts and politician speeches. Did denialist rhetoric originate amongst elites or the mass public? How did this rhetoric evolve over time, and what is the future of election denialism in American politics?
 
 Second, I study how executives in presidential democracies circumvent their term limits. My [recent paper](/publication/unamendable-term-limits), published in *Democratization*, analyzes one solution for deterring presidents from staying in power for life. 
 
