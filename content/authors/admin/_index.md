@@ -2,6 +2,9 @@
 bio: ''
 education:
   courses:
+  - course: PhD Student, Political Science
+    institution: University of Chicago
+    year: 2025-Current
   - course: MA, Social Sciences, Politics Concentration
     institution: University of Chicago
     year: 2023
@@ -17,16 +20,12 @@ interests:
 - Institutions Deterring Democratic Backsliding
 - Public Trust in Democratic Institutions
 - Presidential Term Limit Evasion
-- Intl Organizations Entrenching Authoritarianism
+- Charters of International Organizations
 organizations:
-- name: Instructional Assistant
-  url: 
-- name: Dept. of Political Science, UChicago
+- name: PhD Student, Dept of Political Science
   url: https://political-science.uchicago.edu/directory/david-crabtree
-- name: Data Manager
-  url: 
-- name: "American Bar Foundation"
-  url: https://www.americanbarfoundation.org/people/david-crabtree/
+- name: University of Chicago
+  url:
 role: ''
 social:
 - icon: envelope
@@ -42,17 +41,17 @@ superuser: true
 title: David I. Crabtree
 ---
 
-I am an Instructional Assistant in the Department of Political Science at the University of Chicago. I advise undergraduate honors students on their thesis research and provide academic support to students in a variety of courses in the political science department. 
+I am a PhD Student in the Department of Political Science at the University of Chicago. My research centers on the erosion of democratic institutions. 
 
-Concurrently, I manage Professor Tom Ginsburg's *Legal Characteristics of International Organizations* project at the American Bar Foundation. The project, funded by the National Science Foundation, is an effort to collect charters for international organizations and record how their legal characteristics and country membership change over time. I manage a team of RAs, clean incoming data, and provide analytical support. We hope to answer how authoritarian international organizations differ from democratic ones.
+Three projects constitute my research agenda. 
 
-I am interested in democratic backsliding in the U.S. and Latin America. 
+First, my current project, funded by the Malyi Center for Institutional Effectiveness, tracks the history of election denialism in the United States with text-as-data analysis of town hall transcripts and politician speeches. I will explore whether denialist rhetoric originated amongst elites or the mass public and examine how it evolved over time. 
 
-My MA thesis suggested backsliding in presidential systems often occurs with early restrictions on freedoms to protest, with these freedoms being less targeted later on in spouts of presidential backsliding. I suggest this is because presidents must circumvent term limits to prolong their time in power, and presidents know that efforts to circumvent term limits have often been thwarted by public protest. As a result, backsliding presidents seek to undermine freedoms of association early in their tenure. 
+Second, I study how executives in presidential democracies circumvent their term limits. My [recent paper](/publication/unamendable-term-limits), published in *Democratization*, analyzes one solution for deterring presidents from staying in power for life. 
 
-In a separate project, I consider whether Constitutions that designate term limits as unamendable can prevent presidents from overstaying their time in power (under review).
+Third, under Professors Tom Ginsburg and Kristina Daugirdas, I help manage the Charters of Intergovernmental Organizations Project (CIGO). The project, funded by the National Science Foundation, is an effort to collect the formal charter documents for international organizations. Charters lay out voting thresholds, rules, and the institutional structure that governs international organizations. Our current work argues that these institutional features have important consequences for the lifecycle of IOs, including their founding principles, flexibility in the face of change, and longevity. 
 
-Before UChicago, I studied how the COVID-19 pandemic affected American perceptions of welfare using survey experiments. 
+Prior to the PhD, I worked two years as a full-time teaching assistant in the Department of Political Science at UChicago. I also worked for one year as a data and project manager for CIGO, managing RAs and cleaning data in R. 
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "/authors/admin/CrabtreeCV.pdf" "newtab" >}}CV{{< /staticref >}}.

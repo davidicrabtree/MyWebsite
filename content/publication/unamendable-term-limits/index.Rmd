@@ -1,0 +1,32 @@
+---
+abstract: "Since 1990, one in six presidents have attempted to prolong their time in office by altering their term limits. Most often, presidents circumvent term limits by amending their country’s constitution. For this reason, some countries have incorporated language into their constitutions barring amendments to term limit provisions. Does insulating term limits in this way serve as a meaningful constraint on presidents, or do they find other ways to stay in office? Leveraging a new dataset of countries with unamendable term limits from 1789-2023, I find these restrictions may be a more effective deterrent than previously thought.  Most importantly, I find that unamendable term limits appear almost exclusively in countries where presidents have violated their constitutions without consequence, and, unsurprisingly, protection provisions have rarely deterred this subset of presidents. This underappreciated dynamic means that we have likely been underestimating their potential for deterrence. Moreover, I argue that presidents’ preferred strategy for altering term limits – legislative amendment – requires less coordination and less risk  than relying on courts or constituent assemblies, which presidents must turn to when amendments are blocked. Finally, even when presidents succeed at altering protected term limits, they rarely remove the term limit entirely, suggesting protections may be efficacious." 
+author_notes:
+- PhD Student - University of Chicago
+authors:
+- admin
+date: "2025-07-30T00:00:00Z"
+doi: ""
+featured: true
+image:
+  caption: 
+  focal_point: ""
+  preview_only: false
+projects:
+publication: In *Democratization*
+publication_short: 
+publication_types:
+- "2"
+publishDate: "2025-07-30T00:00:00Z"
+slides: 
+summary: 
+tags: []
+title: "Can Unamendable Term Limits Prevent Presidents for Life?"
+url_code: ""
+url_dataset: ""
+url_pdf: ""
+url_poster: ""
+url_project: ""
+url_slides: ""
+url_source: "https://doi.org/10.1080/13510347.2025.2534695"
+url_video: ""
+---

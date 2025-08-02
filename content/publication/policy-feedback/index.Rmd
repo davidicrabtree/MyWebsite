@@ -8,7 +8,7 @@ authors:
 - Wesley W. Wehde
 date: "2023-01-06T00:00:00Z"
 doi: ""
-featured: true
+featured: false
 image:
   caption: 
   focal_point: ""
