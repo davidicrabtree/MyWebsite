@@ -1,0 +1,19 @@
+// Site-specific styles (loaded last by the Wowchemy theme).
+
+// Headshot on the Data Science page: beside the intro on wide screens,
+// centered above it on phones.
+.ds-headshot {
+  float: right;
+  width: 130px;
+  height: 130px;
+  margin: 0.25rem 0 1rem 1.5rem;
+  border-radius: 50%;
+}
+
+@media (max-width: 767.98px) {
+  .ds-headshot {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem;
+  }
+}
