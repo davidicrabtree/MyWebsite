@@ -9,11 +9,11 @@ tags:
   - R
 links:
   - name: Read the report
-    url: /portfolio/oregon-medicaid/report.html
+    url: https://davidicrabtree.github.io/oregon-medicaid-experiment/report.html
     icon: file-alt
     icon_pack: fas
   - name: PDF
-    url: /portfolio/oregon-medicaid/report.pdf
+    url: https://davidicrabtree.github.io/oregon-medicaid-experiment/report.pdf
     icon: file-pdf
     icon_pack: fas
   - name: Code
@@ -30,14 +30,14 @@ In 2008, Oregon expanded Medicaid by lottery, creating one of the few randomized
 
 I rebuilt that analysis from the public-use data, reproduced its headline estimates, and asked how well the evidence supports the way the results are described.
 
-## What I did
+## Summary
 
 - **Reproduced the published results** in Python (pandas, statsmodels, linearmodels), with a parallel implementation in R that matches the Python results on every table.
 - **Followed the original design:** lottery-based instrumental variables, survey weights, and household-clustered standard errors.
 - **Checked the experiment:** response rates and covariate balance between lottery winners and losers.
 - **Extended the analysis** with power calculations, minimum detectable effects, and checks of specific claims in the paper.
 
-![Effects of Medicaid coverage on three outcomes, with 95% confidence intervals](featured.png)
+![Effects of Medicaid coverage on three outcomes, with 95% confidence intervals](https://davidicrabtree.github.io/oregon-medicaid-experiment/output/figures/main_effects.png)
 
 ## What I found
 
@@ -48,12 +48,12 @@ I rebuilt that analysis from the public-use data, reproduced its headline estima
 3. **The paper misstates its own definition of elevated blood pressure.** The published results use systolic *or* diastolic thresholds; the table footnote says *and*. Under the stated definition the control-group rate would be 7.0%, not 16.3%.
 4. **Covariate adjustment can't recover the lost precision.** Pre-lottery characteristics shrink standard errors by only about 1%.
 
-![Statistical power to detect reductions in elevated blood pressure](power_curve.png)
+![Statistical power to detect reductions in elevated blood pressure](https://davidicrabtree.github.io/oregon-medicaid-experiment/output/figures/power_curve.png)
 
-## Why it matters
+## Takeaways
 
-A null result from an underpowered study is not evidence of no effect, and a significant result is not evidence of an effect as large as its point estimate. The same questions come up whenever a team reads an A/B test: was the test big enough to find the effect we care about, and how big could the true effect plausibly be?
+A null result from an underpowered study is not evidence of no effect, and a significant result is not evidence of an effect as large as its point estimate.
 
-[Read the full report](/portfolio/oregon-medicaid/report.html) for the full methods, balance checks, and replication details.
+[Read the full report](https://davidicrabtree.github.io/oregon-medicaid-experiment/report.html) for the full methods, balance checks, and replication details.
 
 [← Back to Data Science](/data-science/)

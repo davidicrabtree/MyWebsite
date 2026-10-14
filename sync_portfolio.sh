@@ -1,6 +1,9 @@
 #!/bin/bash
-# Copy the latest Oregon Medicaid report and figures from the project folder
-# into the website. Run after re-rendering the report, then commit and push.
+# The Oregon Medicaid report, PDF, and the figures on its case-study page are
+# served from the project's GitHub Pages site, so they update whenever the
+# project is pushed. The one local copy is the thumbnail shown on the Data
+# Science page (featured.png). If the main-effects figure changes, run this,
+# then commit and push the website.
 #
 #   ./sync_portfolio.sh
 
@@ -9,9 +12,7 @@ set -euo pipefail
 SRC="$HOME/Project Portfolio/oregon-medicaid-experiment"
 SITE="$(cd "$(dirname "$0")" && pwd)"
 
-cp "$SRC/report.html" "$SRC/report.pdf" "$SITE/static/portfolio/oregon-medicaid/"
 cp "$SRC/output/figures/main_effects.png" "$SITE/content/portfolio/oregon-medicaid/featured.png"
-cp "$SRC/output/figures/power_curve.png" "$SITE/content/portfolio/oregon-medicaid/power_curve.png"
 
 cd "$SITE"
-git status --short static/portfolio content/portfolio
+git status --short content/portfolio
