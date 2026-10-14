@@ -444,4 +444,4 @@ class: center, middle, inverse
 
 ## Email me! 
 
-### crabtreed@uchicago.edu
+### crabtree.david.dc@gmail.com

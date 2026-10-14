@@ -14,7 +14,7 @@ education:
   - course: BA, International Affairs
     institution: East Tennessee State University
     year: 2022
-email: "crabtreed@uchicago.edu"
+email: "crabtree.david.dc@gmail.com"
 highlight_name: true
 interests:
 - Institutions Deterring Democratic Backsliding

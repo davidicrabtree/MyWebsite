@@ -25,7 +25,7 @@ content:
       captcha: true
 
   # Contact details (edit or remove options as required)
-  email: crabtreed@uchicago.edu
+  email: crabtree.david.dc@gmail.com
   # phone: 888 888 88 88
   # address:
   #   street: 450 Serra Mall
