@@ -2,7 +2,7 @@
 widget: blank
 headless: true
 weight: 30
-title: What I Bring
+title: Background
 subtitle: ''
 design:
   columns: '2'
