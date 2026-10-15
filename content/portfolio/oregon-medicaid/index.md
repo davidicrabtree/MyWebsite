@@ -39,7 +39,7 @@ I rebuilt that analysis from the public-use data, reproduced its headline estima
 
 ![Effects of Medicaid coverage on three outcomes, with 95% confidence intervals](https://davidicrabtree.github.io/oregon-medicaid-experiment/output/figures/main_effects.png)
 
-## What I found
+## Findings
 
 **Some of the paper's summary claims go further than its evidence.**
 
