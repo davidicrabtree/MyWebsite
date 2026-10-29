@@ -1,18 +1,21 @@
 #!/bin/bash
-# The Oregon Medicaid report, PDF, and the figures on its case-study page are
-# served from the project's GitHub Pages site, so they update whenever the
-# project is pushed. The one local copy is the thumbnail shown on the Data
-# Science page (featured.png). If the main-effects figure changes, run this,
-# then commit and push the website.
+# Portfolio reports, PDFs, and the figures on each case-study page are served
+# from each project's GitHub Pages site, so they update whenever the project is
+# pushed. The only local copies are the card thumbnails on the Data Science page
+# (featured.png). If a thumbnail figure changes, run this, then commit and push
+# the website.
 #
 #   ./sync_portfolio.sh
 
 set -euo pipefail
 
-SRC="$HOME/Project Portfolio/oregon-medicaid-experiment"
+PROJ="$HOME/Project Portfolio"
 SITE="$(cd "$(dirname "$0")" && pwd)"
 
-cp "$SRC/output/figures/main_effects.png" "$SITE/content/portfolio/oregon-medicaid/featured.png"
+cp "$PROJ/oregon-medicaid-experiment/output/figures/main_effects.png" \
+   "$SITE/content/portfolio/oregon-medicaid/featured.png"
+cp "$PROJ/gss-panel-attrition/output/figures/bias_summary.png" \
+   "$SITE/content/portfolio/gss-panel-attrition/featured.png"
 
 cd "$SITE"
 git status --short content/portfolio
