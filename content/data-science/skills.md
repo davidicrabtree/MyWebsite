@@ -8,11 +8,11 @@ design:
   columns: '2'
 ---
 
-**Languages:** R (advanced, six years), Python (intermediate), SQL (beginner)
+**Languages:** R (advanced, six years), Python (intermediate), SQL (basic)
 
-**Tools:** tidyverse, estimatr, ggplot2, pandas, statsmodels, linearmodels, Quarto and R Markdown, Git and GitHub
+**Tools:** tidyverse, estimatr, ggplot2, pandas, scikit-learn, statsmodels, linearmodels, Quarto and R Markdown, Git and GitHub
 
-**Methods:** randomized experiments, instrumental variables, regression, power analysis, survey weighting, text analysis
+**Methods:** randomized experiments, instrumental variables, regression, power analysis, machine learning (lasso, random forests, gradient boosting), survey weighting, text analysis
 
 **Education:**
 - M.S. in Analytics, Georgia Institute of Technology (in progress)
